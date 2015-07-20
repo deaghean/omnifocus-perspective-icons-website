@@ -196,7 +196,7 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
         </div>
     </section>
     
-    <section class="installation">
+    <section class="installation" id="installation">
         <div class="container">
             <h2>Installation</h2>
             
