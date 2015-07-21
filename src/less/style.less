@@ -197,8 +197,8 @@ code
         @max-width: 944px
     );
     .clear-fix();
-    padding: 16px;
     position: relative;
+    padding: 16px;
     
     @media @query-464
     {
@@ -222,9 +222,8 @@ header
         background-image: url('../images/icon-background.png'), linear-gradient(to bottom right, #8743bf, #65239b);
         background-repeat: no-repeat;
         padding-top: 180px;
-        padding-bottom: 32px;
-        overflow: hidden;
         position: relative;
+        overflow: hidden;
         
         @media @query-2x
         {
@@ -274,25 +273,21 @@ header
         margin: 0 0 16px 0;
         font-size: 24px;
         
+        .wf-active &
+        {
+            font-size: 30px;
+        }
+        
         @media @query-464
         {
-            font-size: 48px;
+            font-size: 36px;
             line-height: 1.2;
             
             .wf-active &
             {
                 font-weight: 300;
+                font-size: 48px;
             }
-        }
-    }
-    
-    p
-    {
-        margin: 0 0 32px 0;
-        
-        &:last-child
-        {
-            margin: 0;
         }
     }
     
@@ -370,6 +365,16 @@ main
         }
     }
     
+    .introduction
+    {
+        @media @query-784
+        {
+            width: 288px;
+            position: absolute;
+            left: 32px;
+        }
+    }
+    
     .color-selector
     {
         list-style: none;
@@ -444,21 +449,6 @@ main
             }
         }
     }
-}
-
-.mac
-{
-    background: #eff2f1;
-    
-    .introduction
-    {
-        @media @query-784
-        {
-            width: 304px;
-            position: absolute;
-            left: 32px;
-        }
-    }
     
     .glyphs
     {
@@ -468,22 +458,17 @@ main
         
         @media @query-784
         {
-            padding-left: 320px;
+            padding-left: 304px;
             margin-top: -8px;
         }
         
         li
         {
-            margin: 0 16px 0 0;
+            margin: 0;
             padding: 0;
             float: left;
             width: 64px;
             height: 64px;
-            
-            @media @query-784
-            {
-                margin: 0 0 0 16px;
-            }
         }
         
         figure
@@ -503,8 +488,27 @@ main
         figcaption
         {
             .bold();
-            font-size: 10px;
+            color: #666;
+            font-size: 9px;
             margin: -8px 0 0 0;
+            
+            .wf-active &
+            {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#mac
+{
+    background: #eff2f1;
+    
+    .glyphs
+    {
+        @media @query-784
+        {
+            margin-top: -8px;
         }
     }
 }
@@ -513,24 +517,10 @@ main
 
 /* @group iOS Icons */
 
-.ios
+#ios
 {
-    .introduction
-    {
-        @media @query-784
-        {
-            width: 304px;
-            position: absolute;
-            left: 32px;
-        }
-    }
-    
     .glyphs
     {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        
         @media @query-784
         {
             padding-left: 320px;
@@ -538,18 +528,8 @@ main
         
         li
         {
-            margin: 0;
-            padding: 0;
-        }
-        
-        figure
-        {
-            margin: 0;
-            padding: 0;
-            width: 64px;
+            margin-right: 8px;
             height: 96px;
-            float: left;
-            margin-right: 16px;
             
             @media @query-2x
             {
@@ -561,16 +541,19 @@ main
                 margin-left: 16px;
                 margin-right: 0;
             }
+        }
+        
+        figure
+        {
+            padding: 0;
             
             img
             {
                 width: 64px;
                 height: 64px;
-                display: inline-block;
                 
                 @media @query-2x
                 {
-                    margin-left: 16px;
                     width: 32px;
                     height: 32px;
                 }
@@ -579,10 +562,7 @@ main
         
         figcaption
         {
-            .bold();
-            font-size: 10px;
             margin: -4px 0 0 0;
-            text-align: center;
         }
     }
 }
@@ -591,7 +571,7 @@ main
 
 /* @group Installation */
 
-.installation
+#installation
 {
     img
     {

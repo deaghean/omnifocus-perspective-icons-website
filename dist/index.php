@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#7431ab" />
     
     <!-- CSS -->
-    <!--[if !lt IE 9]><!--><link href="css/style.css" rel="stylesheet" /><!--<![endif]-->
+    <!--[if !lt IE 9]><!--><link href="css/style.css?v=2" rel="stylesheet" /><!--<![endif]-->
     <!--[if lte IE 8]><link href="css/text-only.css" rel="stylesheet" /><![endif]-->
 </head>
 <body>
@@ -132,7 +132,7 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
 ?>
 
 <main id="content" role="main" tabindex="-1">
-    <section class="mac">
+    <section id="mac">
         <div class="container">
             <h2>Mac Icons</h2>
             
@@ -163,7 +163,7 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
         </div>
     </section>
     
-    <section class="ios">
+    <section id="ios">
         <div class="container">
             <h2>iOS Icons</h2>
             
@@ -196,7 +196,7 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
         </div>
     </section>
     
-    <section class="installation" id="installation">
+    <section id="installation">
         <div class="container">
             <h2>Installation</h2>
             
@@ -230,17 +230,18 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
 
 <script src="js/jquery.js"></script>
 <script>
-$('body').on('click', '.color-selector a', function() {
+$('body').on('click', '.color-selector a', function()
+{
     $.get($(this).attr('href'), function(html) {
-        var mac = $(html).find('.mac');
-        var ios = $(html).find('.ios');
+        var mac = $(html).find('#mac');
+        var ios = $(html).find('#ios');
         
         if (mac.length > 0) {
-            $('.mac').replaceWith(mac);
+            $('#mac').replaceWith(mac);
         }
         
         if (ios.length > 0) {
-            $('.ios').replaceWith(ios);
+            $('#ios').replaceWith(ios);
         }
     });
     return false;
@@ -248,6 +249,9 @@ $('body').on('click', '.color-selector a', function() {
 </script>
 <!--<![endif]-->
 
-<script src="js/google-analytics.js"></script>
+<?php
+if ((isset($_SERVER['HTTP_HOST'])) && ($_SERVER['HTTP_HOST'] == 'omnifocusicons.josh-hughes.com'))
+    print '<script src="js/google-analytics.js"></script>';
+?>
 </body>
 </html>
