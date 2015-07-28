@@ -156,7 +156,7 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
                 <?php
                 foreach ($icon_list as $icon_name => $icon_label)
                 {
-                    printf('<li><figure><img src="icons/%s/icon-%s.png" srcset="icons/%s/icon-%s.png 1x, icons/%s/icon-%s@2x.png 2x" alt="%s icon" /><figcaption>%s</figcaption></figure></li>', $icon_name, $mac_color, $icon_name, $mac_color, $icon_name, $mac_color, $icon_label, $icon_label);  
+                    printf('<li><figure><img src="icons/%s/icon-%s.png" srcset="icons/%s/icon-%s.png 1x, icons/%s/icon-%s@2x.png 2x" alt="%s icon" class="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $mac_color, $icon_name, $mac_color, $icon_name, $mac_color, $icon_label, $icon_name, $icon_label);  
                 }
                 ?>
             </ul>
@@ -189,7 +189,7 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
                 <?php
                 foreach ($icon_list as $icon_name => $icon_label)
                 {
-                    printf('<li><figure><img src="icons/%s/icon-ios-%s@2x.png" alt="%s icon" /><figcaption>%s</figcaption></figure></li>', $icon_name, $ios_color, $icon_label, $icon_label);  
+                    printf('<li><figure><img src="icons/%s/icon-ios-%s@2x.png" alt="%s icon" class="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $ios_color, $icon_label, $icon_name, $icon_label);  
                 }
                 ?>
             </ul>
@@ -225,28 +225,10 @@ if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors)))
 
 <!-- Javascript -->
 <!--[if !lt IE 9]><!-->
+<script src="js/script.js"></script>
+
 <script src="//use.typekit.net/chz1jjn.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-
-<script src="js/jquery.js"></script>
-<script>
-$('body').on('click', '.color-selector a', function()
-{
-    $.get($(this).attr('href'), function(html) {
-        var mac = $(html).find('#mac');
-        var ios = $(html).find('#ios');
-        
-        if (mac.length > 0) {
-            $('#mac').replaceWith(mac);
-        }
-        
-        if (ios.length > 0) {
-            $('#ios').replaceWith(ios);
-        }
-    });
-    return false;
-});
-</script>
 <!--<![endif]-->
 
 <?php

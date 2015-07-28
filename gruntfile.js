@@ -46,9 +46,9 @@ module.exports = function (grunt){
         
         // Copy files
         copy: {
-            'jquery.js': {
-                src: 'bower_components/jquery/dist/jquery.min.js',
-                dest: '<%= distpath %>js/jquery.js'
+            'script.js': {
+                src: 'src/js/script.js',
+                dest: '<%= distpath %>js/script.js'
             }
         },
         
@@ -89,7 +89,8 @@ module.exports = function (grunt){
             // Add/remove files as necessary. We're skipping vendor files for the most part
             'js-files': {
                 src: [
-                    'gruntfile.js'
+                    'gruntfile.js',
+                    'src/js/script.js'
                 ]
             }
         },

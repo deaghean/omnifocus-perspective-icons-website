@@ -4,8 +4,5 @@
     "authors": ["Josh Hughes <josh@josh-hughes.com>"],
     "repository": "github:deaghean/omnifocus-perspective-icons-website",
     "main": [],
-    "ignore": [],
-    "dependencies": {
-        "jquery": "master"
-    }
+    "ignore": []
 }
