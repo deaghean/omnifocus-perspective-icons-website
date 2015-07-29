@@ -54,7 +54,7 @@ function switchColors(element, mode)
                     // Mac or iOS?
                     if (mode === 'mac') {
                         iconImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-' + colorClass + '.png');
-                        iconImages[i].setAttribute('srcset', 'icons/' + iconClass + '/icon-' + colorClass + '.png 1x, icons/' + iconClass + '/icon-' + colorClass + '@2x.png 1x');
+                        iconImages[i].setAttribute('srcset', 'icons/' + iconClass + '/icon-' + colorClass + '.png 1x, icons/' + iconClass + '/icon-' + colorClass + '@2x.png 2x');
                     } else {
                         iconImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-ios-' + colorClass + '@2x.png');
                     }
