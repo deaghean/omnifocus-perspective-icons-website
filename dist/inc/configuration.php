@@ -69,6 +69,7 @@ $icon_list = array(
     'perspective' => 'Perspective',
     'phone-tablet' => 'Phone/Tablet',
     'play' => 'Play',
+    'radar' => 'Radar',
     'rain' => 'Rain',
     'repeating' => 'Repeating 1',
     'repeating-alt' => 'Repeating 2',
