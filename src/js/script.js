@@ -3,92 +3,106 @@
  *
  * @author Josh Hughes (josh@josh-hughes.com)
  */
- 
-var colorClass, colorOptions, i, iconClass, iconImages, iosSelectorLinks, macSelectorLinks, selectorLinks;
-    
-// Set color options
-colorOptions = ['blue', 'brown', 'graphite', 'green', 'orange', 'purple', 'red', 'teal'];
+/* globals mac_resolution_changed */
 
-// Setup color switchers
-macSelectorLinks = document.querySelectorAll('#mac .color-selector a');
-iosSelectorLinks = document.querySelectorAll('#ios .color-selector a');
+var currentColors = {
+    'ios' : document.querySelector('#ios .color-selector a.selected').classList[0], 
+    'mac' : document.querySelector('#mac .color-selector a.selected').classList[0]
+};
+
+var currentResolutions = { 
+    'ios' : document.querySelector('#ios .resolution-selector a.selected').classList[0], 
+    'mac' : document.querySelector('#mac .resolution-selector a.selected').classList[0]
+};
 
 /**
- * Switch icon colors (general method for both Mac and iOS)
+ * Switch out icons
  *
- * @param object element Node associated with a given color
- * @param string mode 'mac' or 'ios'
+ * @param string color Color of icon
+ * @param string type 'mac' or 'ios'
+ * @param string resolution '1x' or '2x'
  */
-function switchColors(element, mode)
+function switchIcons(color, type, resolution)
 {
+    var colorClass          = color,
+        colorsAvailable     = ['blue', 'brown', 'graphite', 'green', 'orange', 'purple', 'red', 'teal'],
+        iconClass           = '';
+    
+    if (colorsAvailable.indexOf(colorClass) >= 0) {
+        
+        // Update current values
+        currentColors[type] = color;
+        currentResolutions[type] = resolution;
+
+        // Update colorClass
+        if (type === 'ios') {
+            colorClass = 'ios-' + colorClass;
+        }
+
+        if (resolution !== '1x') {
+            colorClass += '@' + resolution;
+        }
+
+        // Update selected class for resolution selector
+        document.querySelectorAll('#' + type + ' .resolution-selector .selected').forEach(function(selector) {
+            selector.classList.remove('selected');
+        });
+        document.querySelectorAll('#' + type + ' .resolution-selector .resolution-' + resolution).forEach(function(selector) {
+            selector.classList.add('selected');
+        });
+
+        document.querySelectorAll('#' + type + ' .glyphs img').forEach(function(glyphImage) {
+            iconClass = glyphImage.className;
+            
+            if ((typeof iconClass !== 'undefined') && (iconClass !== '')) {
+                glyphImage.setAttribute('src', 'icons/' + iconClass + '/icon-' + colorClass + '.png');
+            }
+        });
+    }
+}
+
+/**
+ * Change icon colors
+ *
+ * @param object event Event
+ */
+function switchColors(event)
+{
+    var currentSection = this.parentNode.parentNode.parentNode.parentNode.id;
+    switchIcons(this.className, currentSection, currentResolutions[currentSection]);
+
     // Stop clickthrough
     event.preventDefault();
-    
-    // Classes
-    iconClass = '';
-    colorClass = element.className;
-    
-    if (colorOptions.indexOf(colorClass) >= 0) {
-        
-        // Mac or iOS?
-        if (mode === 'mac') {
-            selectorLinks = macSelectorLinks;
-            iconImages = document.querySelectorAll('#mac .glyphs img');
-        } else {
-            selectorLinks = iosSelectorLinks;
-            iconImages = document.querySelectorAll('#ios .glyphs img');
-        }
-            
-        // Set proper 'selected-color' class on the color selector
-        for (i = 0; i < selectorLinks.length; i++) {
-            selectorLinks[i].className = selectorLinks[i].className.replace(' selected-color', '');
-        }
-        element.className = element.className + ' selected-color';
-        
-        // Update glyphs
-        if (iconImages.length > 0) {
-            for (i = 0; i < iconImages.length; i++) {            
-                iconClass = iconImages[i].className;
-                if ((typeof iconClass !== 'undefined') && (iconClass !== '')) {
-                    
-                    // Mac or iOS?
-                    if (mode === 'mac') {
-                        iconImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-' + colorClass + '.png');
-                        iconImages[i].setAttribute('srcset', 'icons/' + iconClass + '/icon-' + colorClass + '.png 1x, icons/' + iconClass + '/icon-' + colorClass + '@2x.png 2x');
-                    } else {
-                        iconImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-ios-' + colorClass + '@2x.png');
-                    }
-                }
-            }
-        }
-    }
 }
 
 /**
- * Switch Mac colors
+ * Change resolutions
+ *
+ * @param object event Event
  */
-function switchMacColors()
+function switchResolutions(event)
 {
-    switchColors(this, 'mac');
-}
-
-/**
- * Switch iOS colors
- */
-function switchiOSColors()
-{
-    switchColors(this, 'ios');
-}
-
-// Add click events
-if (macSelectorLinks.length > 0) {
-    for (i = 0; i < macSelectorLinks.length; i++) {
-        macSelectorLinks[i].onclick = switchMacColors;
+    var currentSection = this.parentNode.parentNode.parentNode.parentNode.id;
+    var resolution = '1x';
+    if (this.classList.contains('resolution-2x')) {
+        resolution = '2x';
     }
+    switchIcons(currentColors[currentSection], currentSection, resolution);
+
+    // Stop clickthrough
+    event.preventDefault();
 }
 
-if (iosSelectorLinks.length > 0) {
-    for (i = 0; i < iosSelectorLinks.length; i++) {
-        iosSelectorLinks[i].onclick = switchiOSColors;
-    }
+// Do a Mac resolution check, and update the Mac icons if necessary
+if ((window.devicePixelRatio) && (window.devicePixelRatio > 1.5) && (mac_resolution_changed === false)) {
+    switchIcons(currentColors.mac, 'mac', '2x');
 }
+
+// Add events to the color and resolution switchers
+document.querySelectorAll('.color-selector a').forEach(function(selectorLink) {
+    selectorLink.addEventListener('click', switchColors);
+});
+
+document.querySelectorAll('.resolution-selector a').forEach(function(selectorLink) {
+    selectorLink.addEventListener('click', switchResolutions);
+});

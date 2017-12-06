@@ -1,4 +1,4 @@
-[![Perspective Icons for OmniFocus Website](Icon-Banner.jpg)](http://omnifocusicons.josh-hughes.com)
+[![Perspective Icons for OmniFocus Website](Icon-Banner.png)](http://omnifocusicons.josh-hughes.com)
 
 # [Perspective Icons for OmniFocus Website](http://omnifocusicons.josh-hughes.com)
 

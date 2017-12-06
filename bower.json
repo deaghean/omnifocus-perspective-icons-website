@@ -1,8 +1,0 @@
-{
-    "name": "omnifocus-perspective-icons-website",
-    "description": "Website for a free set of custom perspective icons for OmniFocus.",
-    "authors": ["Josh Hughes <josh@josh-hughes.com>"],
-    "repository": "github:deaghean/omnifocus-perspective-icons-website",
-    "main": [],
-    "ignore": []
-}

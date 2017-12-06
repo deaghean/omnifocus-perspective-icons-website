@@ -13,20 +13,20 @@ $icon_list = array(
     'arrow-right' => 'Arrow Right',
     'arrow-up' => 'Arrow Up',
     'baby-bottle' => 'Baby Bottle',
-    'battery-high' => 'Battery High',
-    'battery-low' => 'Battery Low',
-    'battery-medium' => 'Battery Med',
+    'battery-high' => 'Battery (High)',
+    'battery-medium' => 'Battery (Medium)',
+    'battery-low' => 'Battery (Low)',
     'beaker' => 'Beaker',
     'book' => 'Book',
     'briefcase' => 'Briefcase',
     'broom' => 'Broom',
     'bug' => 'Bug',
-    'calendar-day' => 'Calendar 1',
-    'calendar-month' => 'Calendar 2',
+    'calendar-day' => 'Calendar (Day)',
+    'calendar-month' => 'Calendar (Month)',
     'camera' => 'Camera',
     'car' => 'Car',
-    'chart-line' => 'Chart - Line',
-    'chart-pie' => 'Chart - Pie',
+    'chart-line' => 'Chart (Line)',
+    'chart-pie' => 'Chart (Pie)',
     'chat' => 'Chat',
     'checkmark' => 'Checkmark',
     'coffee' => 'Coffee',
@@ -43,16 +43,16 @@ $icon_list = array(
     'home' => 'Home',
     'imac' => 'iMac',
     'inbox' => 'Inbox',
-    'inbox-in' => 'Inbox - In',
-    'inbox-out' => 'Inbox - Out',
-    'index-cards' => 'Index Cards',
+    'inbox-in' => 'Inbox (In)',
+    'inbox-out' => 'Inbox (Out)',
+    'index-cards' => 'Index Card',
     'laptop' => 'Laptop',
     'light-bulb' => 'Light Bulb',
     'lightning' => 'Lightning',
-    'list' => 'List 1',
-    'list-alt' => 'List 2',
-    'list-remaining' => 'List 3',
-    'list-alt-remaining' => 'List 4',
+    'list' => 'List',
+    'list-alt' => 'List',
+    'list-remaining' => 'List',
+    'list-alt-remaining' => 'List',
     'lock' => 'Lock',
     'map' => 'Map',
     'money' => 'Money ($)',
@@ -61,17 +61,17 @@ $icon_list = array(
     'music' => 'Music',
     'night' => 'Night',
     'org-chart' => 'Org Chart',
-    'paper-airplane' => 'Paper Air',
+    'paper-airplane' => 'Paper Airplane',
     'paused' => 'Paused',
     'pencil' => 'Pencil',
     'person-female' => 'Person',
     'person-male' => 'Person',
     'perspective' => 'Perspective',
-    'phone-tablet' => 'Phone/Tablet',
+    'phone-tablet' => 'Phone',
     'play' => 'Play',
     'rain' => 'Rain',
-    'repeating' => 'Repeating 1',
-    'repeating-alt' => 'Repeating 2',
+    'repeating' => 'Repeating',
+    'repeating-alt' => 'Repeating',
     'search' => 'Search',
     'shopping-cart' => 'Shopping',
     'skull' => 'Skull',
@@ -87,25 +87,42 @@ $icon_list = array(
 
 // Available colors
 $all_colors = array(
-    'blue',
-    'brown',
-    'graphite',
-    'green',
-    'orange',
     'purple',
+    'blue',
+    'graphite',
+    'teal',
+    'green',
+    'brown',
     'red',
-    'teal'
+    'orange'
 );
 
-// Default colors
-$mac_color = 'purple';
-$ios_color = 'teal';
+// Available resolutions
+$all_resolutions = array(
+    '1x' => 'Non-Retina',
+    '2x' => 'Retina'
+);
 
-// Override defaults, if set
+// Set colors
+$mac_color = 'purple';
 if ((isset($_GET['mac-color'])) && (in_array($_GET['mac-color'], $all_colors))) {
     $mac_color = $_GET['mac-color'];
 }
 
+$ios_color = 'teal';
 if ((isset($_GET['ios-color'])) && (in_array($_GET['ios-color'], $all_colors))) {
     $ios_color = $_GET['ios-color'];
+}
+
+// Set resolutions
+$mac_resolution = '1x';
+$mac_resolution_changed = 'false';
+if ((isset($_GET['mac-resolution'])) && (array_key_exists($_GET['mac-resolution'], $all_resolutions))) {
+    $mac_resolution = $_GET['mac-resolution'];
+    $mac_resolution_changed = 'true';
+}
+
+$ios_resolution = '2x';
+if ((isset($_GET['ios-resolution'])) && (array_key_exists($_GET['ios-resolution'], $all_resolutions))) {
+    $ios_resolution = $_GET['ios-resolution'];
 }
