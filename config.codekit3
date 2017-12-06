@@ -16,83 +16,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/assets\/design\/of-icons1.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/design\/of-icons1.psd",
-		"oF": 0
-		},
-	"\/assets\/design\/of-screenshot-new@2x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/design\/of-screenshot-new@2x.psd",
-		"oF": 0
-		},
-	"\/assets\/design\/of-screenshot.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/design\/of-screenshot.psd",
-		"oF": 0
-		},
-	"\/assets\/perspectives-1x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/perspectives-1x.psd",
-		"oF": 0
-		},
-	"\/assets\/perspectives-2x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/perspectives-2x.psd",
-		"oF": 0
-		},
-	"\/assets\/screenshot-1x-alt.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/screenshot-1x-alt.psd",
-		"oF": 0
-		},
-	"\/assets\/screenshot-1x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/screenshot-1x.psd",
-		"oF": 0
-		},
-	"\/assets\/screenshot-2x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/screenshot-2x.psd",
-		"oF": 0
-		},
-	"\/assets\/screenshot-perspective-1x-alt.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/screenshot-perspective-1x-alt.psd",
-		"oF": 0
-		},
-	"\/assets\/screenshot-perspective-1x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/screenshot-perspective-1x.psd",
-		"oF": 0
-		},
-	"\/assets\/screenshot-perspective-2x.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/screenshot-perspective-2x.psd",
-		"oF": 0
-		},
 	"\/dist\/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -21944,6 +21867,358 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/dist\/icons\/radar\/icon-blue.png": {
+		"ft": 32768,
+		"iS": 1168,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-blue.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-blue@2x.png": {
+		"ft": 32768,
+		"iS": 1306,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-blue@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-brown.png": {
+		"ft": 32768,
+		"iS": 1048,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-brown.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-brown@2x.png": {
+		"ft": 32768,
+		"iS": 1999,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-brown@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-graphite.png": {
+		"ft": 32768,
+		"iS": 1165,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-graphite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-graphite@2x.png": {
+		"ft": 32768,
+		"iS": 1319,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-graphite@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-green.png": {
+		"ft": 32768,
+		"iS": 1168,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-green@2x.png": {
+		"ft": 32768,
+		"iS": 1328,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-green@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-blue.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-blue.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-blue@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-blue@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-brown.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-brown.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-brown@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-brown@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-graphite.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-graphite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-graphite@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-graphite@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-green.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-green@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-green@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-orange.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-orange.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-orange@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-orange@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-purple.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-purple.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-purple@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-purple@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-red.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-red.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-red@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-red@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-teal.png": {
+		"ft": 32768,
+		"iS": 782,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-teal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-ios-teal@2x.png": {
+		"ft": 32768,
+		"iS": 1457,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-ios-teal@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-orange.png": {
+		"ft": 32768,
+		"iS": 1165,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-orange.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-orange@2x.png": {
+		"ft": 32768,
+		"iS": 1318,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-orange@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-purple.png": {
+		"ft": 32768,
+		"iS": 1165,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-purple.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-purple@2x.png": {
+		"ft": 32768,
+		"iS": 1321,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-purple@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-red.png": {
+		"ft": 32768,
+		"iS": 1165,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-red.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-red@2x.png": {
+		"ft": 32768,
+		"iS": 1323,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-red@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-teal.png": {
+		"ft": 32768,
+		"iS": 1168,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-teal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/icons\/radar\/icon-teal@2x.png": {
+		"ft": 32768,
+		"iS": 1323,
+		"oA": 0,
+		"oAP": "\/dist\/icons\/radar\/icon-teal@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/dist\/icons\/rain\/icon-blue.png": {
 		"ft": 32768,
 		"iS": 957,
@@ -26967,17 +27242,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/images\/of-screenshot@2x-.png": {
-		"ft": 32768,
-		"iS": 115462,
-		"oA": 0,
-		"oAP": "\/dist\/images\/of-screenshot@2x-.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"\/dist\/images\/of-screenshot@2x.png": {
 		"ft": 32768,
 		"iS": 80772,
@@ -27140,25 +27404,21 @@
 		"oA": 0,
 		"oAP": "\/dist\/css\/style.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/src\/scss\/text-only.less": {
+	"\/src\/scss\/text-only.scss": {
 		"aP": 0,
 		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/dist\/css\/text-only.css",
 		"oF": 2,
-		"oS": 1,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
+		"oS": 3,
+		"uL": 1
 		},
 	"\/vendor\/google-analytics.js": {
 		"ft": 64,
@@ -27187,7 +27447,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 519012310,
-	"displayValue": "Perspective Icons for OmniFocus Website",
+	"displayValue": "omnifocus-perspective-icons-website",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/dist\/images\/apple-touch-icon-180.png"
 	},

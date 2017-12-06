@@ -34,7 +34,7 @@ function colorSelector($mode, $mac_color, $ios_color, $all_colors, $mac_resoluti
             }
             $link = sprintf('?mac-color=%s&#38;ios-color=%s&#38;mac-resolution=%s&#38;ios-resolution=%s', $mac_color, $color, $mac_resolution, $ios_resolution);
         }        
-        $color_selector .= sprintf('<li><a href="%s" class="%s">%s</a></li>', $link, $class, ucfirst($color));
+        $color_selector .= sprintf('<li><a href="%s" class="%s" data-color="%s">%s</a></li>', $link, $class, $color, ucfirst($color));
     }
     
     print $color_selector;
@@ -69,7 +69,7 @@ function resolutionSelector($mode, $mac_resolution, $ios_resolution, $all_resolu
             }
             $link = sprintf('?mac-color=%s&#38;ios-color=%s&#38;mac-resolution=%s&#38;ios-resolution=%s', $mac_color, $ios_color, $mac_resolution, $resolution);
         }        
-        $resolution_selector .= sprintf('<li><a href="%s" class="%s">%s</a></li>', $link, $class, $resolution_label);
+        $resolution_selector .= sprintf('<li><a href="%s" class="%s" data-resolution="%s">%s</a></li>', $link, $class, $resolution, $resolution_label);
     }
     print $resolution_selector;
 }

@@ -591,10 +591,12 @@ footer
         max-width: 30rem;
         margin: 0 auto;
 
-        @media #{$query-944}
-        {
-            @supports (display: grid)
-            {                
+        @supports (display: grid)
+        { 
+            max-width: 100%;
+            
+            @media #{$query-944}
+            {      
                 grid-column-start: 2;
                 max-width: 100%;
             }

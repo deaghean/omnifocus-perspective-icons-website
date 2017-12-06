@@ -6,14 +6,17 @@
 /* globals mac_resolution_changed */
 
 var currentColors = {
-    'ios' : document.querySelector('#ios .color-selector a.selected').classList[0], 
-    'mac' : document.querySelector('#mac .color-selector a.selected').classList[0]
+    'ios' : document.querySelector('#ios .color-selector a.selected').getAttribute('data-color'), 
+    'mac' : document.querySelector('#mac .color-selector a.selected').getAttribute('data-color')
 };
 
 var currentResolutions = { 
-    'ios' : document.querySelector('#ios .resolution-selector a.selected').classList[0], 
-    'mac' : document.querySelector('#mac .resolution-selector a.selected').classList[0]
+    'ios' : document.querySelector('#ios .resolution-selector a.selected').getAttribute('data-resolution'), 
+    'mac' : document.querySelector('#mac .resolution-selector a.selected').getAttribute('data-resolution')
 };
+
+var colorSelectors      = document.querySelectorAll('.color-selector a'),
+    resolutionSelectors = document.querySelectorAll('.resolution-selector a');
 
 /**
  * Switch out icons
@@ -26,9 +29,12 @@ function switchIcons(color, type, resolution)
 {
     var colorClass          = color,
         colorsAvailable     = ['blue', 'brown', 'graphite', 'green', 'orange', 'purple', 'red', 'teal'],
-        iconClass           = '';
+        glyphImages         = document.querySelectorAll('#' + type + ' .glyphs img'),
+        iconClass           = '',
+        selectedNow        = document.querySelectorAll('#' + type + ' .resolution-selector .resolution-' + resolution),
+        selectedPreviously = document.querySelectorAll('#' + type + ' .resolution-selector .selected');
     
-    if (colorsAvailable.indexOf(colorClass) >= 0) {
+    if (colorsAvailable.indexOf(color) >= 0) {
         
         // Update current values
         currentColors[type] = color;
@@ -44,20 +50,21 @@ function switchIcons(color, type, resolution)
         }
 
         // Update selected class for resolution selector
-        document.querySelectorAll('#' + type + ' .resolution-selector .selected').forEach(function(selector) {
-            selector.classList.remove('selected');
-        });
-        document.querySelectorAll('#' + type + ' .resolution-selector .resolution-' + resolution).forEach(function(selector) {
-            selector.classList.add('selected');
-        });
+        for (var i = 0; i < selectedPreviously.length; i++) {
+            selectedPreviously[i].classList.remove('selected');
+        }
+        for (i = 0; i < selectedNow.length; i++) {
+            selectedNow[i].classList.add('selected');
+        }
 
-        document.querySelectorAll('#' + type + ' .glyphs img').forEach(function(glyphImage) {
-            iconClass = glyphImage.className;
+        // Update glyphs
+        for (i = 0; i < glyphImages.length; i++) {
+            iconClass = glyphImages[i].className;
             
             if ((typeof iconClass !== 'undefined') && (iconClass !== '')) {
-                glyphImage.setAttribute('src', 'icons/' + iconClass + '/icon-' + colorClass + '.png');
+                glyphImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-' + colorClass + '.png');
             }
-        });
+        }
     }
 }
 
@@ -69,7 +76,7 @@ function switchIcons(color, type, resolution)
 function switchColors(event)
 {
     var currentSection = this.parentNode.parentNode.parentNode.parentNode.id;
-    switchIcons(this.className, currentSection, currentResolutions[currentSection]);
+    switchIcons(this.getAttribute('data-color'), currentSection, currentResolutions[currentSection]);
 
     // Stop clickthrough
     event.preventDefault();
@@ -83,11 +90,7 @@ function switchColors(event)
 function switchResolutions(event)
 {
     var currentSection = this.parentNode.parentNode.parentNode.parentNode.id;
-    var resolution = '1x';
-    if (this.classList.contains('resolution-2x')) {
-        resolution = '2x';
-    }
-    switchIcons(currentColors[currentSection], currentSection, resolution);
+    switchIcons(currentColors[currentSection], currentSection, this.getAttribute('data-resolution'));
 
     // Stop clickthrough
     event.preventDefault();
@@ -99,10 +102,9 @@ if ((window.devicePixelRatio) && (window.devicePixelRatio > 1.5) && (mac_resolut
 }
 
 // Add events to the color and resolution switchers
-document.querySelectorAll('.color-selector a').forEach(function(selectorLink) {
-    selectorLink.addEventListener('click', switchColors);
-});
-
-document.querySelectorAll('.resolution-selector a').forEach(function(selectorLink) {
-    selectorLink.addEventListener('click', switchResolutions);
-});
+for (var i = 0; i < colorSelectors.length; i++) {
+    colorSelectors[i].addEventListener('click', switchColors);
+}
+for (i = 0; i < resolutionSelectors.length; i++) {
+    resolutionSelectors[i].addEventListener('click', switchResolutions);
+}
