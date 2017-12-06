@@ -1,4 +1,8 @@
 .DS_Store
 assets
 bower_components
+<<<<<<< HEAD
 node_modules
+=======
+.DS_Store
+>>>>>>> b89b21fb45bfcec189357e0fd60c4be98d76c2c3
