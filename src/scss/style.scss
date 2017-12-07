@@ -148,7 +148,7 @@ header
             @supports (display: grid)
             {
                 display: block;
-                background: url('../images/of-screenshot.png') no-repeat 0 bottom;
+                background: url('../images/of-screenshot.jpg') no-repeat 0 bottom;
             }
         }
         
@@ -156,7 +156,7 @@ header
         {
             @supports (display: grid)
             {
-                background-image: url('../images/of-screenshot@2x.png');
+                background-image: url('../images/of-screenshot@2x.jpg');
                 background-size: 976px 443px;
             }
         }

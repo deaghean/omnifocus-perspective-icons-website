@@ -16,6 +16,83 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/assets\/design\/of-icons1.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/design\/of-icons1.psd",
+		"oF": 0
+		},
+	"\/assets\/design\/of-screenshot-new@2x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/design\/of-screenshot-new@2x.psd",
+		"oF": 0
+		},
+	"\/assets\/design\/of-screenshot.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/design\/of-screenshot.psd",
+		"oF": 0
+		},
+	"\/assets\/perspectives-1x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/perspectives-1x.psd",
+		"oF": 0
+		},
+	"\/assets\/perspectives-2x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/perspectives-2x.psd",
+		"oF": 0
+		},
+	"\/assets\/screenshot-1x-alt.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/screenshot-1x-alt.psd",
+		"oF": 0
+		},
+	"\/assets\/screenshot-1x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/screenshot-1x.psd",
+		"oF": 0
+		},
+	"\/assets\/screenshot-2x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/screenshot-2x.psd",
+		"oF": 0
+		},
+	"\/assets\/screenshot-perspective-1x-alt.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/screenshot-perspective-1x-alt.psd",
+		"oF": 0
+		},
+	"\/assets\/screenshot-perspective-1x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/screenshot-perspective-1x.psd",
+		"oF": 0
+		},
+	"\/assets\/screenshot-perspective-2x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/screenshot-perspective-2x.psd",
+		"oF": 0
+		},
 	"\/dist\/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -27231,26 +27308,24 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/images\/of-screenshot.png": {
-		"ft": 32768,
-		"iS": 47374,
+	"\/dist\/images\/of-screenshot.jpg": {
+		"ft": 16384,
+		"iS": 86131,
 		"oA": 0,
-		"oAP": "\/dist\/images\/of-screenshot.png",
+		"oAP": "\/dist\/images\/of-screenshot.jpg",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
-	"\/dist\/images\/of-screenshot@2x.png": {
-		"ft": 32768,
-		"iS": 80772,
+	"\/dist\/images\/of-screenshot@2x.jpg": {
+		"ft": 16384,
+		"iS": 172355,
 		"oA": 0,
-		"oAP": "\/dist\/images\/of-screenshot@2x.png",
+		"oAP": "\/dist\/images\/of-screenshot@2x.jpg",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/dist\/images\/perspective-installation.png": {
@@ -27370,18 +27445,32 @@
 		"oAP": "\/src\/images\/favicon.psd",
 		"oF": 0
 		},
-	"\/src\/images\/perspectives-installation.psd": {
+	"\/src\/images\/of-screenshot.psd": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/src\/images\/perspectives-installation.psd",
+		"oAP": "\/src\/images\/of-screenshot.psd",
 		"oF": 0
 		},
-	"\/src\/images\/perspectives-installation@2x.psd": {
+	"\/src\/images\/of-screenshot@2x.psd": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/src\/images\/perspectives-installation@2x.psd",
+		"oAP": "\/src\/images\/of-screenshot@2x.psd",
+		"oF": 0
+		},
+	"\/src\/images\/perspective-installation.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/images\/perspective-installation.psd",
+		"oF": 0
+		},
+	"\/src\/images\/perspective-installation@2x.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/images\/perspective-installation@2x.psd",
 		"oF": 0
 		},
 	"\/src\/js\/script.js": {
@@ -27447,7 +27536,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 519012310,
-	"displayValue": "omnifocus-perspective-icons-website",
+	"displayValue": "Perspective Icons for OmniFocus Website",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/dist\/images\/apple-touch-icon-180.png"
 	},

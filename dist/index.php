@@ -35,10 +35,10 @@ require_once('inc/functions.php');
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@deaghean" />
-    <meta property="og:url" content="http://omnifocusicons.josh-hughes.com/" />
+    <meta property="og:url" content="https://omnifocusicons.josh-hughes.com/" />
     <meta property="og:title" content="Perspective Icons for OmniFocus, by Josh Hughes" />
     <meta property="og:description" content="Enhance your experience with the Omni Group&#8217;s fantastic personal task management software, OmniFocus, with this FREE set of custom perspective icons." />
-    <meta property="og:image" content="http://omnifocusicons.josh-hughes.com/images/twitter-image.png" />
+    <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image.png" />
     
     <!-- CSS -->
     <!--[if !lt IE 9]><!--><link href="css/style.css" rel="stylesheet" /><!--<![endif]-->
