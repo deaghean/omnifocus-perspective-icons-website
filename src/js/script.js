@@ -65,6 +65,23 @@ function switchIcons(color, type, resolution)
                 glyphImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-' + colorClass + '.png');
             }
         }
+
+        // Update control hrefs (in case the user opens the links in a new tab/window)
+        for (i = 0; i < colorSelectors.length; i++) {
+            if (colorSelectors[i].parentNode.parentNode.parentNode.parentNode.id === 'mac') {
+                colorSelectors[i].setAttribute('href', '?mac-color=' + colorSelectors[i].getAttribute('data-color') +  '&ios-color=' + currentColors.ios + '&mac-resolution=' + currentResolutions.mac + '&ios-resolution=' + currentResolutions.ios);
+            } else {
+                colorSelectors[i].setAttribute('href', '?mac-color=' + currentColors.mac +  '&ios-color=' + colorSelectors[i].getAttribute('data-color') + '&mac-resolution=' + currentResolutions.mac + '&ios-resolution=' + currentResolutions.ios);
+            }
+        }
+
+        for (i = 0; i < resolutionSelectors.length; i++) {
+            if (resolutionSelectors[i].parentNode.parentNode.parentNode.parentNode.id === 'mac') {
+                resolutionSelectors[i].setAttribute('href', '?mac-color=' + currentColors.mac +  '&ios-color=' + currentColors.ios + '&mac-resolution=' + resolutionSelectors[i].getAttribute('data-resolution') + '&ios-resolution=' + currentResolutions.ios);
+            } else {
+                resolutionSelectors[i].setAttribute('href', '?mac-color=' + currentColors.mac +  '&ios-color=' + currentColors.ios + '&mac-resolution=' + currentResolutions.mac + '&ios-resolution=' + resolutionSelectors[i].getAttribute('data-resolution'));
+            }
+        }
     }
 }
 
