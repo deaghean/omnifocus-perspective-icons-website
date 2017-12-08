@@ -95,6 +95,9 @@ function switchColors(event)
     var currentSection = this.parentNode.parentNode.parentNode.parentNode.id;
     switchIcons(this.getAttribute('data-color'), currentSection, currentResolutions[currentSection]);
 
+    // Clear focus
+    this.blur();
+
     // Stop clickthrough
     event.preventDefault();
 }

@@ -25,6 +25,7 @@ $color-icon-red:                #f26177;
 $color-icon-teal:               #00bdc0;
 
 // Media queries
+$query-368:                     'screen and (min-width: 23em)';
 $query-464:                     'screen and (min-width: 29em)';
 $query-704:                     'screen and (min-width: 44em)';
 $query-704-2x:                  'screen and (min-width: 44em) and (min-resolution: 2dppx), screen and (min-width: 44em) and (-webkit-min-device-pixel-ratio : 2)';
@@ -198,7 +199,7 @@ header
         margin-right: 0.5rem;
         background: $color-purple-400;
         border: none;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
         font-size: 1.125rem;
         
         &:hover,
@@ -219,10 +220,10 @@ header
     .github
     {
         white-space: nowrap;
+        position: relative;
 
         @media #{$query-464}
         {
-            position: relative;
             top: -0.2em;
         }
     }
@@ -326,20 +327,32 @@ main
         li
         {
             display: inline-block;
-            margin-right: 1rem;
+            margin-right: 0.5rem;
             margin-bottom: 1rem;
+            
+            @media #{$query-368} {
+                margin-right: 1rem;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         a
         {
             border: 2px solid #fff;
-            width: 2rem;
-            height: 2rem;
+            width: 1.5rem;
+            height: 1.5rem;
             border-radius: 50%;
-            display: block;
+            display: inline-block;
             overflow: hidden;
             text-indent: 2rem;
             transition: ease-in 0.1s transform;
+            @media #{$query-464} {
+                width: 2rem;
+                height: 2rem;
+            }
 
             &:hover,
             &:focus
@@ -409,6 +422,12 @@ main
             @media #{$query-704} 
             {
                 justify-self: flex-end;
+                margin-top: -0.25rem;
+            }
+
+            @media #{$query-944} 
+            {
+                margin-top: 0;
             }
         }
 
@@ -438,6 +457,7 @@ main
             padding: 0.25rem 1rem;
             margin-left: -2px;
             font-weight: 500;
+            font-size: 1.125rem;
 
             &.selected 
             {

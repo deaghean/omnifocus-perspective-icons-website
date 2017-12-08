@@ -89,8 +89,8 @@ $icon_list = array(
 // Available colors
 $all_colors = array(
     'purple',
-    'blue',
     'graphite',
+    'blue',
     'teal',
     'green',
     'brown',
