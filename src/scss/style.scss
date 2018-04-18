@@ -261,14 +261,27 @@ main
                 grid-template-rows: auto 1fr;
                 grid-gap: 1rem;
                 justify-content: center;
+
+                .v3 & 
+                {
+                    display: block;
+                    max-width: 55rem;
+                    margin: 0 auto;
+                }
             }
         }
     }
 
+    h1,
     h2 
     {
         margin: 0 0 1rem 0;
         font-size: 1.5rem;
+
+        .v3 & 
+        {
+            margin: 0;
+        }
 
         @media #{$query-464}
         {
@@ -309,6 +322,11 @@ main
                 display: grid;
                 grid-template-columns: 24rem 1fr;
                 grid-gap: 1rem;
+
+                .v3 & 
+                {
+                    display: block;
+                }
             }
 
             @media #{$query-944} 
@@ -323,6 +341,11 @@ main
         list-style: none;
         padding: 0;
         margin: 0;
+
+        .v3 &
+        {
+            margin: 2rem 0 1rem 0;
+        }
 
         li
         {
@@ -354,6 +377,16 @@ main
                 height: 2rem;
             }
 
+            .v3 &
+            {
+                width: 1.25rem;
+                height: 1.25rem;
+                @media #{$query-464} {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                }
+            }
+
             &:hover,
             &:focus
             {
@@ -365,48 +398,102 @@ main
             {
                 background: $color-icon-blue;
                 border-color: darken($color-icon-blue, 10%);
+
+                .v3 & 
+                {
+                    background: #3f98ea;
+                    border-color: darken(#3f98ea, 10%);
+                }
             }
             
             &.brown
             {
                 background: $color-icon-brown;
                 border-color: darken($color-icon-brown, 10%);
+
+                .v3 & 
+                {
+                    background: #be532b;
+                    border-color: darken(#be532b, 10%);
+                }
             }
             
             &.graphite
             {
                 background: $color-icon-graphite;
                 border-color: darken($color-icon-graphite, 10%);
+
+                .v3 & 
+                {
+                    background: #697998;
+                    border-color: darken(#697998, 10%);
+                }
             }
             
             &.green
             {
                 background: $color-icon-green;
                 border-color: darken($color-icon-green, 10%);
+
+                .v3 & 
+                {
+                    background: #32d390;
+                    border-color: darken(#32d390, 10%);
+                }
             }
             
             &.orange
             {
                 background: $color-icon-orange;
                 border-color: darken($color-icon-orange, 10%);
+
+                .v3 & 
+                {
+                    background: #f89c68;
+                    border-color: darken(#f89c68, 10%);
+                }
             }
             
             &.purple
             {
                 background: $color-icon-purple;
                 border-color: darken($color-icon-purple, 10%);
+
+                .v3 & 
+                {
+                    background: #6a6fd2;
+                    border-color: darken(#6a6fd2, 10%);
+                }
+            }
+
+            &.violet
+            {
+                background: #b089d6;
+                border-color: darken(#b089d6, 10%);
             }
             
             &.red
             {
                 background: $color-icon-red;
                 border-color: darken($color-icon-red, 10%);
+
+                .v3 & 
+                {
+                    background: #f26177;
+                    border-color: darken(#f26177, 10%);
+                }
             }
             
             &.teal
             {
                 background: $color-icon-teal;
                 border-color: darken($color-icon-teal, 10%);
+
+                .v3 & 
+                {
+                    background: #00bfbf;
+                    border-color: darken(#00bfbf, 10%);
+                }
             }
         }
     }
