@@ -13,6 +13,7 @@ $icon_list = array(
     'arrow-left'         => 'Arrow Left',
     'arrow-right'        => 'Arrow Right',
     'arrow-up'           => 'Arrow Up',
+    'baby-bottle'        => 'Baby Bottle',
     'beaker'             => 'Beaker',
     'book'               => 'Book',
     'briefcase'          => 'Briefcase',
