@@ -73,15 +73,30 @@ $icon_list = array(
 
 // Available colors
 $all_colors = array(
-    'blue',
-    'graphite',
-    'purple',
-    'violet',
-    'teal',
-    'green',
-    'red',
+    'sherbet',
+    'pink',
+    'magenta',
     'orange',
-    'brown'
+    'light-pink',
+    'red',
+    'green',
+    'lime-green',
+    'gold',
+    'teal',
+    'light-teal',
+    'dark-teal',
+    'purple',
+    'light-purple',
+    'indigo',
+    'lilac',
+    'fuchsia',
+    'plum',
+    'blue',
+    'light-blue',
+    'navy',
+    'graphite',
+    'grey',
+    'light-grey'
 );
 
 // Set colors

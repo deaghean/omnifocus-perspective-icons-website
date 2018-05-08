@@ -393,55 +393,25 @@ main
                 transform: scale(1.5);
                 position: relative;
             }
-            
-            &.blue
-            {
-                background: $color-icon-blue;
-                border-color: darken($color-icon-blue, 10%);
 
-                .v3 & 
-                {
-                    background: #3f98ea;
-                    border-color: darken(#3f98ea, 10%);
-                }
-            }
-            
-            &.brown
+            &.sherbet
             {
-                background: $color-icon-brown;
-                border-color: darken($color-icon-brown, 10%);
-
-                .v3 & 
-                {
-                    background: #be532b;
-                    border-color: darken(#be532b, 10%);
-                }
+                background: #f16379;
+                border-color: darken(#f16379, 10%);
             }
-            
-            &.graphite
+
+            &.pink
             {
-                background: $color-icon-graphite;
-                border-color: darken($color-icon-graphite, 10%);
-
-                .v3 & 
-                {
-                    background: #697998;
-                    border-color: darken(#697998, 10%);
-                }
+                background: #ff68aa;
+                border-color: darken(#ff68aa, 10%);
             }
-            
-            &.green
+
+            &.magenta
             {
-                background: $color-icon-green;
-                border-color: darken($color-icon-green, 10%);
-
-                .v3 & 
-                {
-                    background: #32d390;
-                    border-color: darken(#32d390, 10%);
-                }
+                background: #db0082;
+                border-color: darken(#db0082, 10%);
             }
-            
+
             &.orange
             {
                 background: $color-icon-orange;
@@ -449,29 +419,17 @@ main
 
                 .v3 & 
                 {
-                    background: #f89c68;
-                    border-color: darken(#f89c68, 10%);
-                }
-            }
-            
-            &.purple
-            {
-                background: $color-icon-purple;
-                border-color: darken($color-icon-purple, 10%);
-
-                .v3 & 
-                {
-                    background: #6a6fd2;
-                    border-color: darken(#6a6fd2, 10%);
+                    background: #ff7e00;
+                    border-color: darken(#ff7e00, 10%);
                 }
             }
 
-            &.violet
+            &.light-pink
             {
-                background: #b089d6;
-                border-color: darken(#b089d6, 10%);
+                background: #ffabaa;
+                border-color: darken(#ffabaa, 10%);
             }
-            
+
             &.red
             {
                 background: $color-icon-red;
@@ -479,11 +437,35 @@ main
 
                 .v3 & 
                 {
-                    background: #f26177;
-                    border-color: darken(#f26177, 10%);
+                    background: #dd5038;
+                    border-color: darken(#dd5038, 10%);
                 }
             }
-            
+
+            &.green
+            {
+                background: $color-icon-green;
+                border-color: darken($color-icon-green, 10%);
+
+                .v3 & 
+                {
+                    background: #3fd392;
+                    border-color: darken(#3fd392, 10%);
+                }
+            }
+
+            &.lime-green
+            {
+                background: #cce600;
+                border-color: darken(#cce600, 10%);
+            }
+
+            &.gold
+            {
+                background: #ffc619;
+                border-color: darken(#ffc619, 10%);
+            }
+
             &.teal
             {
                 background: $color-icon-teal;
@@ -491,9 +473,117 @@ main
 
                 .v3 & 
                 {
-                    background: #00bfbf;
-                    border-color: darken(#00bfbf, 10%);
+                    background: #1fc0be;
+                    border-color: darken(#1fc0be, 10%);
                 }
+            }
+
+            &.light-teal
+            {
+                background: #76d4d6;
+                border-color: darken(#76d4d6, 10%);
+            }
+
+            &.dark-teal
+            {
+                background: #009092;
+                border-color: darken(#009092, 10%);
+            }
+
+            &.purple
+            {
+                background: $color-icon-purple;
+                border-color: darken($color-icon-purple, 10%);
+
+                .v3 & 
+                {
+                    background: #624dd7;
+                    border-color: darken(#624dd7, 10%);
+                }
+            }
+
+            &.light-purple
+            {
+                background: #a18cff;
+                border-color: darken(#a18cff, 10%);
+            }
+
+            &.indigo
+            {
+                background: #5232ff;
+                border-color: darken(#5232ff, 10%);
+            }
+
+            &.lilac
+            {
+                background: #deb0ff;
+                border-color: darken(#deb0ff, 10%);
+            }
+            
+            &.fuchsia
+            {
+                background: #c656ff;
+                border-color: darken(#c656ff, 10%);
+            }
+
+            &.plum
+            {
+                background: #9327ab;
+                border-color: darken(#9327ab, 10%);
+            }
+
+            &.blue
+            {
+                background: $color-icon-blue;
+                border-color: darken($color-icon-blue, 10%);
+
+                .v3 & 
+                {
+                    background: #449ae8;
+                    border-color: darken(#449ae8, 10%);
+                }
+            }
+
+            &.light-blue
+            {
+                background: #30d6ff;
+                border-color: darken(#30d6ff, 10%);
+            }
+
+            &.navy
+            {
+                background: #007aa9;
+                border-color: darken(#007aa9, 10%);
+            }
+
+            &.graphite
+            {
+                background: $color-icon-graphite;
+                border-color: darken($color-icon-graphite, 10%);
+
+                .v3 & 
+                {
+                    background: #6b7b98;
+                    border-color: darken(#6b7b98, 10%);
+                }
+            }
+
+            &.grey
+            {
+                background: #666665;
+                border-color: darken(#666665, 10%);
+            }
+
+            &.light-grey
+            {
+                background: #999999;
+                border-color: darken(#999999, 10%);
+            }
+            
+            &.brown
+            {
+                background: $color-icon-brown;
+                border-color: darken($color-icon-brown, 10%);
             }
         }
     }
