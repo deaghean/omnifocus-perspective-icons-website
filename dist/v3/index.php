@@ -33,8 +33,8 @@ require_once('../inc/functionsV3.php');
     <meta name="msapplication-TileColor" content="#7431ab" />
     
     <!-- CSS -->
-    <!--[if !lt IE 9]><!--><link href="../css/style.css?v=4" rel="stylesheet" /><!--<![endif]-->
-    <!--[if lte IE 8]><link href="../css/text-only.css?v=3" rel="stylesheet" /><![endif]-->
+    <!--[if !lt IE 9]><!--><link href="../css/style.css?v=5" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lte IE 8]><link href="../css/text-only.css?v=5" rel="stylesheet" /><![endif]-->
 </head>
 <body>
 <!--[if lte IE 8]>

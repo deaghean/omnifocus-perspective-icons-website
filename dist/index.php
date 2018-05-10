@@ -41,8 +41,8 @@ require_once('inc/functions.php');
     <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image.png" />
     
     <!-- CSS -->
-    <!--[if !lt IE 9]><!--><link href="css/style.css" rel="stylesheet" /><!--<![endif]-->
-    <!--[if lte IE 8]><link href="css/text-only.css" rel="stylesheet" /><![endif]-->
+    <!--[if !lt IE 9]><!--><link href="css/style.css?v=5" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lte IE 8]><link href="css/text-only.css?v=5" rel="stylesheet" /><![endif]-->
 </head>
 <body>
 <!--[if lte IE 8]>
