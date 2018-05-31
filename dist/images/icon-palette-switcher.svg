@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="58px" viewBox="0 0 24 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-palette-switcher</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-palette-switcher" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.32439297,2.36196051 C7.8877019,3.80816463 7,5.80041537 7,8 C7,12.418278 10.581722,16 15,16 C18.0114847,16 20.6343269,14.3360238 21.9992631,11.8773348 C21.9997539,11.9181648 22,11.9590537 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,7.40386769 5.10070771,3.53194447 9.32439297,2.36196051 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <circle id="Oval-38" fill="#270B4A" cx="12" cy="46" r="4"></circle>
+        <g id="Group" transform="translate(2.000000, 36.000000)" stroke="#270B4A" stroke-linecap="round" stroke-width="2">
+            <path d="M10,-1.42108547e-14 L10,3" id="Path-23"></path>
+            <path d="M10,17 L10,20" id="Path-23"></path>
+            <path d="M17,10 L20,10" id="Path-23"></path>
+            <path d="M0,10 L3,10" id="Path-23"></path>
+        </g>
+        <g id="Group-Copy" transform="translate(12.000000, 46.000000) rotate(-45.000000) translate(-12.000000, -46.000000) translate(2.000000, 36.000000)" stroke="#270B4A" stroke-linecap="round" stroke-width="2">
+            <path d="M10,-1.42108547e-14 L10,3" id="Path-23"></path>
+            <path d="M10,17 L10,20" id="Path-23"></path>
+            <path d="M17,10 L20,10" id="Path-23"></path>
+            <path d="M0,10 L3,10" id="Path-23"></path>
+        </g>
+    </g>
+</svg>

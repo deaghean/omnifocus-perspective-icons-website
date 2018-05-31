@@ -3,3 +3,7 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javasc
 
 # Disable IE Compatibility Mode
 Header set X-UA-Compatible "IE=edge,chrome=1"
+
+# Redirect test v3 page
+RewriteEngine on
+RewriteRule ^v3[/]*(.*)$    / [R=301,L]

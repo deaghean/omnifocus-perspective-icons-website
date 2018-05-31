@@ -1,0 +1,1064 @@
+/**
+ * CSS for Perspective Icons for OmniFocus
+ *
+ * @author Josh Hughes (josh@josh-hughes.com)
+ */
+
+// #region - Variables
+
+// Colors - General
+$color-grey-100:                #e8e8e8;
+$color-grey-200:                #ccc;
+$color-grey-300:                #555;
+$color-grey-400:                #333;
+$color-grey-500:                #1d1d1d;
+$color-purple-100:              #a56fd1;
+$color-purple-200:              #8743bf;
+$color-purple-300:              #65239b;
+$color-purple-400:              #3f1177;
+$color-purple-500:              #270b4a;
+
+// Colors - Icons
+$color-icon-v3-sherbet:         #f16379;
+$color-icon-v3-pink:            #ff68aa;
+$color-icon-v3-magenta:         #db0082;
+$color-icon-v3-orange:          #ff7e00;
+$color-icon-v3-light-pink:      #ffabaa;
+$color-icon-v3-red:             #dd5038;
+$color-icon-v3-green:           #3fd392;
+$color-icon-v3-lime-green:      #cce600;
+$color-icon-v3-gold:            #ffc619;
+$color-icon-v3-teal:            #1fc0be;
+$color-icon-v3-light-teal:      #76d4d6;
+$color-icon-v3-dark-teal:       #009092;
+$color-icon-v3-purple:          #624dd7;
+$color-icon-v3-light-purple:    #a18cff;
+$color-icon-v3-indigo:          #5232ff;
+$color-icon-v3-lilac:           #deb0ff;
+$color-icon-v3-fuchsia:         #c656ff;
+$color-icon-v3-plum:            #9327ab;
+$color-icon-v3-blue:            #449ae8;
+$color-icon-v3-light-blue:      #30d6ff;
+$color-icon-v3-navy:            #007aa9;
+$color-icon-v3-graphite:        #6b7b98;
+$color-icon-v3-grey:            #666665;
+$color-icon-v3-light-grey:      #999999;
+
+// Media queries
+$query-368:                     'screen and (min-width: 23em)';
+$query-464:                     'screen and (min-width: 29em)';
+$query-704:                     'screen and (min-width: 44em)';
+$query-704-2x:                  'screen and (min-width: 44em) and (min-resolution: 2dppx), screen and (min-width: 44em) and (-webkit-min-device-pixel-ratio : 2)';
+$query-944:                     'screen and (min-width: 59em)';
+$query-1488:                    'screen and (min-width: 93em)';
+$query-2x:                      'screen and (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio : 2)';
+
+// Grid variable
+$grid-variable:                 grid;
+
+// #endregion
+
+// #region - Mixins
+
+// Hide content visually, but not from screen readers
+// @see https://www.lightningdesignsystem.com/components/utilities/visibility/
+@mixin a11y-hidden()
+{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// #endregion
+
+// #region - Basic Styles
+
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+
+header,
+main,
+section,
+footer
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    background: #fff;
+    color: $color-grey-400;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 20rem;
+
+    &.dark-palette 
+    {
+        background: $color-grey-500;
+        color: $color-grey-100;
+    }
+}
+
+body
+{
+    margin: 0;
+}
+
+p
+{
+    margin: 0 0 1rem 0;
+    
+    &:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+
+a
+{
+    border-bottom: 2px solid transparentize($color-purple-400, 0.75);
+    color: $color-purple-400;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus,
+    &:active
+    {
+        border-bottom-color: transparentize(#000, 0.75);
+        color: #000;
+    }
+
+    .dark-palette & 
+    {
+        border-bottom-color: transparentize(#ffe289, 0.75);
+        color: #ffe289;
+        
+        &:hover,
+        &:focus,
+        &:active
+        {
+            border-bottom-color: transparentize(#fff, 0.75);
+            color: #fff;
+        }
+    }
+}
+
+// #endregion
+
+// #region - Header
+
+header
+{
+    background: $color-purple-300;
+    color: #fff;
+    overflow: hidden;
+
+    @media #{$query-464}
+    {
+        background-image: radial-gradient(ellipse at top left, $color-purple-200 0, $color-purple-300 600px);
+    }
+
+    @supports (display: $grid-variable)
+    {
+        @media #{$query-704}
+        {
+            align-items: flex-end;
+            display: grid;
+            grid-template-columns: 27rem minmax(17rem, 52rem);
+            justify-content: center;
+        }
+    }
+    
+    .introduction
+    {
+        margin: 0 auto;
+        max-width: 34rem;
+        padding: 1.5rem;
+        position: relative;
+        overflow: hidden;
+
+        @media #{$query-464}
+        {
+            padding: 2rem;
+        }
+
+        @supports (display: $grid-variable)
+        {
+            max-width: none;
+
+            @media #{$query-704}
+            {
+                background: url('../images/icon-v3-background.png') no-repeat top right;
+                background-size: 432px 180px;
+                padding-top: 180px;
+            }
+
+            @media #{$query-704-2x}
+            {
+                background-image: url('../images/icon-v3-background@2x.png');
+            }
+
+            .dark-palette &
+            {
+                @media #{$query-704}
+                {
+                    background-image: url('../images/icon-v3-background-dark-palette.png');
+                }
+
+                @media #{$query-704-2x}
+                {
+                    background-image: url('../images/icon-v3-background-dark-palette@2x.png');
+                }
+            }
+        }
+
+        h1
+        {
+            font-weight: 500;
+            margin: 0 0 1rem 0;
+            font-size: 1.875rem;
+            line-height: 1.2;
+            
+            @media #{$query-464}
+            {
+                font-size: 2.7rem;
+            }
+        }
+        
+        a
+        {
+            border-bottom-color: $color-purple-100;
+            color: #fff;
+            
+            &:hover,
+            &:focus,
+            &:active
+            {
+                border-bottom-color: #fff;
+                color: #fff;
+            }
+        }
+    
+        .github
+        {
+            position: relative;
+            white-space: nowrap;
+    
+            @media #{$query-464}
+            {
+                top: -0.2em;
+            }
+        }
+
+        .button
+        {
+            background: $color-purple-400;
+            border: none;
+            border-radius: 0.25rem;
+            color: #fff;
+            display: inline-block;
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            padding: 0.5rem 1rem;
+            
+            @media #{$query-464}
+            {
+                font-size: 1.5rem;
+                padding: 0.5rem 2rem;
+            }
+            
+            &:hover,
+            &:focus,
+            &:active
+            {
+                background: #fff;
+                color: $color-purple-400;
+            }
+        }
+    }
+
+    .screenshot-wrapper
+    {
+        display: none;
+
+        @media #{$query-704}
+        {
+            @supports (display: $grid-variable)
+            {
+                display: block;
+            }
+        }
+
+        .screenshot-frame
+        {
+            background: $color-purple-400;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            box-sizing: content-box;
+            height: 425px;
+            padding: 2rem 2rem 0 2rem;
+            position: relative;
+            width: 768px;
+            
+            .dark-palette &
+            {
+                background: $color-purple-100;
+            }
+        }
+
+        .screenshot
+        {
+            background: url('../images/of3-ipad-screenshot.png') no-repeat;
+            background-size: 768px 550px;
+            height: 100%;
+            width: 100%;
+            
+            @media #{$query-2x}
+            {
+                background-image: url('../images/of3-ipad-screenshot@2x.png');
+            }
+
+            .dark-palette &
+            {
+                background-image: url('../images/of3-ipad-screenshot-dark-palette.png');
+
+                @media #{$query-2x}
+                {
+                    background-image: url('../images/of3-ipad-screenshot-dark-palette@2x.png');
+                }
+            }
+        }
+    }
+}
+
+// #endregion
+
+// #region - Main Content
+
+main
+{
+    @supports (display: $grid-variable)
+    {  
+        @media #{$query-944}
+        {
+            display: grid;
+            grid-template-columns: 27rem minmax(17rem, 52rem);
+            grid-template-rows: min-content min-content min-content;
+            justify-content: center;
+        }
+    }
+
+    section
+    {
+        margin: 0 auto 2rem auto;
+        max-width: 34rem;
+        padding: 1rem 1.5rem 0 1.5rem;
+        position: relative;
+
+        @media #{$query-464}
+        {
+            padding: 1rem 2rem 0 2rem;
+        }
+
+        @supports (display: $grid-variable)
+        {                
+            max-width: none;
+
+            @media #{$query-944}
+            {   
+                margin: 0;
+                padding: 2rem;
+            }
+        }
+    }
+
+    .controls 
+    {
+        background: #fff;
+
+        .dark-palette &
+        {
+            background: $color-grey-500;
+        }
+
+        .has-js &
+        {
+            background: $color-purple-400;
+            background: linear-gradient(to bottom, $color-purple-400, transparentize($color-purple-400, 0.1));
+            margin: 0 0 1rem 0;
+            position: relative;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .has-js.dark-palette &
+        {
+            background: $color-purple-100;
+            background: linear-gradient(to bottom, $color-purple-100, transparentize($color-purple-100, 0.1));
+        }
+
+        @supports (display: $grid-variable)
+        {
+            @media #{$query-944} 
+            {
+                &,
+                .has-js &,
+                .has-js.dark-palette &
+                {
+                    background: none;
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    position: relative;
+                }
+            }
+        }
+
+        form
+        {
+            margin: 0 auto;
+            max-width: 34rem;
+            padding: 1.5rem;
+            position: relative;
+            
+            @media #{$query-464} 
+            {
+                padding: 2rem;
+            }
+
+            .has-js &
+            {
+                padding: 0.75rem 1.5rem;
+
+                @media #{$query-464} 
+                {
+                    padding: 0.75rem 2rem;
+                }
+            }
+
+            @supports (display: $grid-variable)
+            { 
+                max-width: none;
+
+                &,
+                .has-js &
+                {
+                    @media #{$query-944} 
+                    {
+                        padding: 2rem;
+                        position: -webkit-sticky;
+                        position: sticky;
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        #color-button,
+        #palette-button
+        {
+            background: $color-purple-400;
+            border: 0;
+            border-radius: 0.25rem;
+            color: #fff;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            padding: 0.5rem 1rem;
+            
+            @media #{$query-464} 
+            {
+                font-size: 1.125rem;
+            }
+            
+            &:hover,
+            &:focus,
+            &:active
+            {
+                background: $color-purple-500;
+            }
+        }
+
+        #color-button
+        {
+            .has-js &
+            {
+                background: lighten($color-purple-100, 30%);
+                color: $color-purple-500;
+
+                @supports (display: $grid-variable)
+                {
+                    @media #{$query-944} 
+                    {
+                        display: none;
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &:active
+                {
+                    background: #fff;
+                }
+            }
+
+            .has-js.dark-palette &
+            {
+                background: $color-purple-400;
+                color: #fff;
+
+                &:hover,
+                &:focus,
+                &:active
+                {
+                    background: #000;
+                }
+            }
+        }
+
+        #palette-button
+        {
+            margin-right: 0;
+            position: relative;
+
+            .has-js &
+            {
+                background: $color-purple-500;
+                color: #fff;
+                float: right;
+
+                @supports (display: $grid-variable)
+                { 
+                    @media #{$query-944} 
+                    {
+                        float: none;
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &:active
+                {
+                    background: #000;
+                }
+            }
+
+            .has-js.dark-palette &
+            {
+                background: lighten($color-purple-100, 30%);
+                color: $color-purple-500;
+
+                &:hover,
+                &:focus,
+                &:active
+                {
+                    background: #fff;
+                }
+            }
+
+            span
+            {
+                @include a11y-hidden;
+
+                @media #{$query-464} 
+                {
+                    padding-left: 2rem;
+                    position: static;
+
+                    &:before
+                    {
+                        background: url('../images/icon-palette-switcher.svg') no-repeat 0 0;
+                        content: ' ';
+                        display: block;
+                        height: 1.5rem;
+                        left: 0.75rem;
+                        position: absolute;
+                        top: 0.4rem;
+                        width: 1.5rem;
+                    }
+                }
+            }
+
+            &[value='light']
+            {
+                span
+                {
+                    @media #{$query-464} 
+                    {
+                        padding-left: 2rem;
+                        position: static;
+
+                        &:before
+                        {
+                            background-position: 0 -34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .color-selector
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 17rem;
+
+        .has-js &
+        {
+            background: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 2px rgba(0,0,0, 0.25);
+            left: 0.5rem;
+            margin-top: -1rem;
+            padding: 1rem 1rem 0 1rem;
+            position: absolute;
+            top: -5000rem;
+            width: 19rem;
+
+            @media #{$query-464} 
+            {
+                left: 1rem;
+            }
+
+            &.color-selector-shown
+            {
+                top: 100%;
+                z-index: 1;
+
+                & + #color-button
+                {
+                    background: #fff;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+
+        .has-js.dark-palette &
+        {
+            &.color-selector-shown
+            {
+                & + #color-button
+                {
+                    background: #000;
+                }
+            }
+        }
+
+        .has-js.dark-palette &
+        {
+            background: #000;
+        }
+
+        @supports (display: $grid-variable)
+        { 
+            @media #{$query-944} 
+            {
+                &,
+                .has-js &,
+                .has-js.dark-palette &
+                {
+                    background: none;
+                    border-radius: 0;
+                    box-shadow: none;
+                    left: 0;
+                    margin: 0 0 1rem 0;
+                    padding: 0;
+                    position: relative;
+                    top: 0;
+                }
+            }
+        }
+
+        @media #{$query-464}
+        {
+            width: 18rem;
+        }
+
+        li
+        {
+            display: inline-block;
+            height: 2rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            vertical-align: top;
+            width: 2rem;
+
+            &:nth-child(6n),
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        input[type='radio']
+        {
+            @include a11y-hidden;
+
+            &:checked + label:after
+            {
+                content: ' ';
+                background: url('../images/icon-checkmark.svg') no-repeat center center;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        label
+        {
+            border: 0;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            display: inline-block;
+            height: 0;
+            overflow: hidden;
+            padding-top: 2rem;
+            position: relative;
+            text-indent: 2rem;
+            transition: ease-in 0.1s transform;
+            width: 2rem;
+
+            &:hover,
+            &:focus
+            {
+                transform: scale(1.25);
+            }
+        }
+
+        input[value='sherbet'] + label
+        {
+            background: $color-icon-v3-sherbet;
+        }
+
+        input[value='pink'] + label
+        {
+            background: $color-icon-v3-pink;
+        }
+
+        input[value='magenta'] + label
+        {
+            background: $color-icon-v3-magenta;
+        }
+
+        input[value='orange'] + label
+        {
+            background: $color-icon-v3-orange;
+        }
+
+        input[value='light-pink'] + label
+        {
+            background: $color-icon-v3-light-pink;
+        }
+
+        input[value='red'] + label
+        {
+            background: $color-icon-v3-red;
+        }
+
+        input[value='green'] + label
+        {
+            background: $color-icon-v3-green;
+        }
+
+        input[value='lime-green'] + label
+        {
+            background: $color-icon-v3-lime-green;
+        }
+
+        input[value='gold'] + label
+        {
+            background: $color-icon-v3-gold;
+        }
+
+        input[value='teal'] + label
+        {
+            background: $color-icon-v3-teal;
+        }
+
+        input[value='light-teal'] + label
+        {
+            background: $color-icon-v3-light-teal;
+        }
+
+        input[value='dark-teal'] + label
+        {
+            background: $color-icon-v3-dark-teal;
+        }
+
+        input[value='purple'] + label
+        {
+            background: $color-icon-v3-purple;
+        }
+
+        input[value='light-purple'] + label
+        {
+            background: $color-icon-v3-light-purple;
+        }
+
+        input[value='indigo'] + label
+        {
+            background: $color-icon-v3-indigo;
+        }
+
+        input[value='lilac'] + label
+        {
+            background: $color-icon-v3-lilac;
+        }
+        
+        input[value='fuchsia'] + label
+        {
+            background: $color-icon-v3-fuchsia;
+        }
+
+        input[value='plum'] + label
+        {
+            background: $color-icon-v3-plum;
+        }
+
+        input[value='blue'] + label
+        {
+            background: $color-icon-v3-blue;
+        }
+
+        input[value='light-blue'] + label
+        {
+            background: $color-icon-v3-light-blue;
+        }
+
+        input[value='navy'] + label
+        {
+            background: $color-icon-v3-navy;
+        }
+
+        input[value='graphite'] + label
+        {
+            background: $color-icon-v3-graphite;
+        }
+
+        input[value='grey'] + label
+        {
+            background: $color-icon-v3-grey;
+        }
+
+        input[value='light-grey'] + label
+        {
+            background: $color-icon-v3-light-grey;
+        }
+    }
+
+    h1,
+    h2 
+    {
+        color: $color-purple-400;
+        font-size: 1.5rem;
+        margin: 0;
+        
+        .dark-palette &
+        {
+            color: #fff;
+        }
+
+        @media #{$query-464}
+        {
+            font-size: 2rem;
+        }
+    }
+
+    .icon-description
+    {
+        margin-bottom: 2rem;
+    }
+
+    .glyphs
+    {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        @supports (display: $grid-variable) 
+        {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-gap: 1rem 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+
+            @media #{$query-464}
+            {
+                grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+            }
+        }
+
+        li
+        {
+            margin-bottom: 0.5rem;
+        }
+
+        figure,
+        figcaption,
+        img
+        {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+
+            @supports (display: $grid-variable) 
+            {
+                display: block;
+            }
+        }
+
+        figcaption
+        {
+            font-weight: 500;
+
+            @supports (display: $grid-variable) 
+            {
+                color: $color-grey-300;
+                font-size: 0.6875rem;
+                line-height: 1.2;
+                margin-top: 0.25rem;
+                text-align: center;
+
+                .dark-palette &
+                {
+                    color: $color-grey-100;
+                }
+            }
+        }
+
+        img
+        {
+            height: 2rem;
+            margin-right: 0.5rem;
+            width: 2rem;
+
+            @supports (display: $grid-variable) 
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .note
+    {
+        padding-top: 2rem;
+    }
+
+    #round-rect
+    {
+        @supports (display: $grid-variable)
+        {
+            @media #{$query-944} 
+            {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+        }
+    }
+
+    #installation
+    {
+        @supports (display: $grid-variable)
+        {
+            @media #{$query-944} 
+            {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        }
+
+        .instructions
+        {
+            ol
+            {
+                padding: 0 0 0 1.5rem;
+            }
+
+            li
+            {
+                padding-left: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+// #endregion
+
+// #region - Footer
+
+footer
+{
+    
+    background: $color-grey-100;
+    color: $color-grey-400;
+    margin-top: 4rem;
+    padding: 1.5rem;
+
+    @media #{$query-464}
+    {
+        padding: 2rem;
+    }
+
+    @media #{$query-944}
+    {
+        @supports (display: $grid-variable)
+        {                
+            display: grid;
+            grid-template-columns: 27rem minmax(17rem, 52rem);
+            grid-gap: 1rem;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+    }
+
+    .dark-palette & 
+    {
+        background: #000;
+        color: $color-grey-100;
+    }
+
+    p
+    {
+        font-size: 0.875rem;
+        margin: 0 auto;
+        max-width: 30rem;
+
+        @supports (display: $grid-variable)
+        { 
+            max-width: none;
+            
+            @media #{$query-944}
+            {      
+                grid-column-start: 2;
+                max-width: 100%;
+                padding: 0 2rem;
+            }
+        }
+    }
+}
+
+// #endregion
