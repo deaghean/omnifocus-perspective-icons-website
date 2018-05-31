@@ -32,7 +32,7 @@ require_once('inc/functions.php');
     <meta name="twitter:creator" content="@deaghean" />
     <meta property="og:url" content="http://omnifocusicons.josh-hughes.com/" />
     <meta property="og:title" content="Perspective Icons for OmniFocus 3, by Josh Hughes" />
-    <meta property="og:description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3 for iOS (out on May 30, 2018), with this FREE set of custom perspective icons." />
+    <meta property="og:description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3 for iOS, with this FREE set of custom perspective icons." />
     <meta property="og:image" content="http://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
@@ -48,7 +48,7 @@ require_once('inc/functions.php');
     <div class="introduction">
         <h1>Perspective Icons for&nbsp;OmniFocus&nbsp;3</h1>
 
-        <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/">OmniFocus 3 for&nbsp;iOS</a> <em>(out on May 30, 2018)</em>, with this <strong>FREE</strong> set of custom&nbsp;perspective&nbsp;icons.</p>
+        <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3 for&nbsp;iOS</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
 
         <p><a href="https://github.com/deaghean/omnifocus-perspective-icons/archive/master.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
     </div>
@@ -86,7 +86,7 @@ require_once('inc/functions.php');
         <h2>Installation</h2>
 
         <div class="instructions">
-            <p>OmniFocus 3 for iOS for the first time allows custom perspective icons to be chosen from a user&rsquo;s photo library. Follow these steps:</p>
+            <p><a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3 for iOS</a> for the first time allows custom perspective icons to be chosen from a user&rsquo;s photo library. Follow these steps:</p>
 
             <ol>
                 <li>If you haven&rsquo;t already, purchase the <a href="https://support.omnigroup.com/of3-ios-iap/">Pro upgrade</a>. Pro is required to use custom perspectives.</li>
