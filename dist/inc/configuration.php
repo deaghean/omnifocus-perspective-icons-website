@@ -38,6 +38,7 @@ $icon_list = array(
     'chart-pie'                 => 'Chart (Pie)',
     'chat'                      => 'Chat',
     'checkmark'                 => 'Checkmark',
+    'clipboard'                 => 'Clipboard',
     'coffee'                    => 'Coffee',
     'cup'                       => 'Cup',
     'desk'                      => 'Desk',
