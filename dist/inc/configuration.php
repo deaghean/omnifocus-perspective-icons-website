@@ -39,6 +39,7 @@ $icon_list = array(
     'chat'                      => 'Chat',
     'checkmark'                 => 'Checkmark',
     'clipboard'                 => 'Clipboard',
+    'clock'                     => 'Clock',
     'coffee'                    => 'Coffee',
     'cup'                       => 'Cup',
     'desk'                      => 'Desk',
