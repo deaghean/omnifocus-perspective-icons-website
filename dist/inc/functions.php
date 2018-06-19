@@ -36,7 +36,7 @@ function colorSelector($color, $all_colors)
 function glyphs($icon_color, $icon_list)
 {
     foreach ($icon_list as $icon_name => $icon_label) {
-        $glyphs .= sprintf('<li><figure><img src="icons/%s/icon-ios-%s@2x.png" alt="" class="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $icon_color, $icon_name, $icon_label);
+        $glyphs .= sprintf('<li><figure><img src="icons/%s/icon-ios-%s@2x.png?v=2" alt="" class="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $icon_color, $icon_name, $icon_label);
     }
     print $glyphs;
 }

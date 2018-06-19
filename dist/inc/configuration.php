@@ -53,6 +53,7 @@ $icon_list = array(
     'folder'                    => 'Folder',
     'folder-plus'               => 'Folder (+)',
     'folder-star'               => 'Folder (Star)',
+    'fork-knife'                => 'Fork / Knife',
     'fountain-pen'              => 'Fountain Pen',
     'gift'                      => 'Gift',
     'grad-cap'                  => 'Grad Cap',
@@ -78,6 +79,7 @@ $icon_list = array(
     'lock'                      => 'Lock',
     'mac-classic'               => 'Mac Classic',
     'map'                       => 'Map',
+    'meteor'                    => 'Meteor',
     'microphone'                => 'Microphone',
     'money'                     => 'Money',
     'money-dollars'             => 'Money ($)',
@@ -126,6 +128,7 @@ $icon_list = array(
     'warning'                   => 'Warning',
     'watch'                     => 'Watch',
     'waypoint'                  => 'Waypoint',
+    'weights'                   => 'Weights',
     'wrench'                    => 'Wrench'
 );
 
