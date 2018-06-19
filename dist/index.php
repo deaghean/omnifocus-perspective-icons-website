@@ -14,7 +14,7 @@ require_once('inc/functions.php');
 <head>
     <meta charset="utf-8" />
     <title>Perspective Icons for OmniFocus 3, by Josh Hughes</title>
-    <meta name="description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3 for iOS (out on May 30, 2018), with this FREE set of custom perspective icons." />
+    <meta name="description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3 for iOS, with this FREE set of custom perspective icons." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Favicon -->
@@ -36,7 +36,7 @@ require_once('inc/functions.php');
     <meta property="og:image" content="http://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
-    <link href="css/v3.css" rel="stylesheet" />
+    <link href="css/v3.css?v=2" rel="stylesheet" />
 
     <!-- Mark JavaScript Support -->
     <script>
@@ -83,6 +83,10 @@ require_once('inc/functions.php');
     </section>
     
     <section id="installation">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/U23cVd1wyaA?rel=0" frameborder="0" allow="autoplay; encrypted-media" title="Video tutorial for how to install perspective icons on OmniFocus 3 for iOS" allowfullscreen></iframe>
+        </div>
+
         <h2>Installation</h2>
 
         <div class="instructions">

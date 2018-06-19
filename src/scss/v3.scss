@@ -990,6 +990,34 @@ main
             }
         }
 
+        .video
+        {
+            height: 0;
+            overflow: hidden;
+            margin: 0 -1.5rem 2rem -1.5rem;
+            padding-bottom: 56.25%; // 16/9 aspect ratio
+            position: relative;
+
+            @media #{$query-464}
+            {
+                margin: 0 -2rem 2rem -2rem;
+            }
+
+            @media #{$query-944}
+            {
+                margin: 0 0 2rem 0;
+            }
+            
+            iframe
+            {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top:0;
+                width: 100%;   
+            }
+        }
+
         .instructions
         {
             ol
