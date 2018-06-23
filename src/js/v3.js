@@ -25,8 +25,13 @@ function switchIcons(color)
     
     if (colorsAvailable.indexOf(color) >= 0) {
 
-        // Update glyphs
+        // Remove src
         for (var i = 0; i < glyphImages.length; i++) {
+            glyphImages[i].removeAttribute('src');
+        }
+
+        // Update glyphs
+        for (i = 0; i < glyphImages.length; i++) {
             iconClass = glyphImages[i].className;
             
             if ((typeof iconClass !== 'undefined') && (iconClass !== '')) {

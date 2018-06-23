@@ -114,7 +114,7 @@ require_once('inc/functions.php');
 </footer>
 
 <!-- Javascript -->
-<script src="js/v3.js"></script>
+<script src="js/v3.js?v=2"></script>
 <?php
 if ((isset($_SERVER['HTTP_HOST'])) && ($_SERVER['HTTP_HOST'] == 'omnifocusicons.josh-hughes.com')) {
     print '<script src="js/google-analytics.js"></script>';
