@@ -47,6 +47,7 @@ $color-icon-v3-light-grey:      #999999;
 // Media queries
 $query-368:                     'screen and (min-width: 23em)';
 $query-464:                     'screen and (min-width: 29em)';
+$query-480:                     'screen and (min-width: 30em)';
 $query-704:                     'screen and (min-width: 44em)';
 $query-704-2x:                  'screen and (min-width: 44em) and (min-resolution: 2dppx), screen and (min-width: 44em) and (-webkit-min-device-pixel-ratio : 2)';
 $query-944:                     'screen and (min-width: 59em)';
@@ -482,7 +483,7 @@ main
             margin-right: 0.5rem;
             padding: 0.5rem 1rem;
             
-            @media #{$query-464} 
+            @media #{$query-480} 
             {
                 font-size: 1.125rem;
             }
@@ -530,6 +531,150 @@ main
                     background: #000;
                 }
             }
+
+            &:before
+            {
+                background: $color-icon-v3-teal;
+                border-radius: 50%;
+                content: ' ';
+                display: none;
+                height: 1rem;
+                margin-right: 0.5rem;
+                margin-top: 0.1rem;
+                vertical-align: top;
+                width: 1rem;
+
+                @media #{$query-368}
+                {
+                    display: inline-block;
+                }
+
+                @media #{$query-480} 
+                {
+                    height: 1.125rem;
+                    width: 1.125rem;
+                }
+            }
+            
+            &.color-button--sherbet:before
+            {
+                background: $color-icon-v3-sherbet;
+            }
+
+            &.color-button--pink:before
+            {
+                background: $color-icon-v3-pink;
+            }
+
+            &.color-button--magenta:before
+            {
+                background: $color-icon-v3-magenta;
+            }
+
+            &.color-button--orange:before
+            {
+                background: $color-icon-v3-orange;
+            }
+
+            &.color-button--light-pink:before
+            {
+                background: $color-icon-v3-light-pink;
+            }
+
+            &.color-button--red:before
+            {
+                background: $color-icon-v3-red;
+            }
+
+            &.color-button--green:before
+            {
+                background: $color-icon-v3-green;
+            }
+
+            &.color-button--lime-green:before
+            {
+                background: $color-icon-v3-lime-green;
+            }
+
+            &.color-button--gold:before
+            {
+                background: $color-icon-v3-gold;
+            }
+
+            &.color-button--teal:before
+            {
+                background: $color-icon-v3-teal;
+            }
+
+            &.color-button--light-teal:before
+            {
+                background: $color-icon-v3-light-teal;
+            }
+
+            &.color-button--dark-teal:before
+            {
+                background: $color-icon-v3-dark-teal;
+            }
+
+            &.color-button--purple:before
+            {
+                background: $color-icon-v3-purple;
+            }
+
+            &.color-button--light-purple:before
+            {
+                background: $color-icon-v3-light-purple;
+            }
+
+            &.color-button--indigo:before
+            {
+                background: $color-icon-v3-indigo;
+            }
+
+            &.color-button--lilac:before
+            {
+                background: $color-icon-v3-lilac;
+            }
+            
+            &.color-button--fuchsia:before
+            {
+                background: $color-icon-v3-fuchsia;
+            }
+
+            &.color-button--plum:before
+            {
+                background: $color-icon-v3-plum;
+            }
+
+            &.color-button--blue:before
+            {
+                background: $color-icon-v3-blue;
+            }
+
+            &.color-button--light-blue:before
+            {
+                background: $color-icon-v3-light-blue;
+            }
+
+            &.color-button--navy:before
+            {
+                background: $color-icon-v3-navy;
+            }
+
+            &.color-button--graphite:before
+            {
+                background: $color-icon-v3-graphite;
+            }
+
+            &.color-button--grey:before
+            {
+                background: $color-icon-v3-grey;
+            }
+
+            &.color-button--light-grey:before
+            {
+                background: $color-icon-v3-light-grey;
+            }
         }
 
         #palette-button
@@ -572,43 +717,48 @@ main
                 }
             }
 
+            &:before
+            {
+                background: url('../images/icon-palette-switcher.svg') no-repeat 0 0;
+                background-size: 100% auto;
+                content: ' ';
+                display: none;
+                height: 1rem;
+                margin-right: 0.5rem;
+                margin-top: 0.1rem;
+                vertical-align: top;
+                width: 1rem;
+
+                @media #{$query-368} 
+                {
+                    display: inline-block;
+                }
+
+                @media #{$query-480} 
+                {
+                    height: 1.125rem;
+                    width: 1.125rem;
+                }
+            }
+
+            &[value='light']
+            {
+                @media #{$query-368} 
+                {
+                    &:before
+                    {
+                        background-position: bottom left;
+                    }
+                }
+            }
+
             span
             {
                 @include a11y-hidden;
 
                 @media #{$query-464} 
                 {
-                    padding-left: 2rem;
                     position: static;
-
-                    &:before
-                    {
-                        background: url('../images/icon-palette-switcher.svg') no-repeat 0 0;
-                        content: ' ';
-                        display: block;
-                        height: 1.5rem;
-                        left: 0.75rem;
-                        position: absolute;
-                        top: 0.4rem;
-                        width: 1.5rem;
-                    }
-                }
-            }
-
-            &[value='light']
-            {
-                span
-                {
-                    @media #{$query-464} 
-                    {
-                        padding-left: 2rem;
-                        position: static;
-
-                        &:before
-                        {
-                            background-position: 0 -34px;
-                        }
-                    }
                 }
             }
         }

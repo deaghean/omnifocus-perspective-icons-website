@@ -69,6 +69,7 @@ function removeColorSelectorModal()
 function switchColors(event)
 {
     event.preventDefault();
+    colorButton.setAttribute('class', 'color-button--' + this.value);
     switchIcons(this.value);
     removeColorSelectorModal();
 }

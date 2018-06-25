@@ -36,7 +36,7 @@ require_once('inc/functions.php');
     <meta property="og:image" content="http://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
-    <link href="css/v3.css?v=2" rel="stylesheet" />
+    <link href="css/v3.css?v=3" rel="stylesheet" />
 
     <!-- Mark JavaScript Support -->
     <script>
@@ -114,7 +114,7 @@ require_once('inc/functions.php');
 </footer>
 
 <!-- Javascript -->
-<script src="js/v3.js?v=2"></script>
+<script src="js/v3.js?v=3"></script>
 <?php
 if ((isset($_SERVER['HTTP_HOST'])) && ($_SERVER['HTTP_HOST'] == 'omnifocusicons.josh-hughes.com')) {
     print '<script src="js/google-analytics.js"></script>';
