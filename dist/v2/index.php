@@ -30,10 +30,10 @@ require_once('inc/functions.php');
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@deaghean" />
-    <meta property="og:url" content="http://omnifocusicons.josh-hughes.com/" />
+    <meta property="og:url" content="https://omnifocusicons.josh-hughes.com/" />
     <meta property="og:title" content="Perspective Icons for OmniFocus, by Josh Hughes" />
     <meta property="og:description" content="Enhance your experience with the Omni Group&#8217;s fantastic personal task management software, OmniFocus, with this FREE set of custom perspective icons." />
-    <meta property="og:image" content="http://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
+    <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
     <link href="../css/v2.css" rel="stylesheet" />
@@ -112,16 +112,11 @@ require_once('inc/functions.php');
 </main>
 
 <footer role="contentinfo">
-    <p>This project is produced by <a href="http://josh-hughes.com">Josh Hughes</a>. It is not affiliated with the <a href="https://www.omnigroup.com">Omni Group</a>. Please feel free to use the icons as you see fit. If you have any questions or requests, please send them to <a href="mailto:josh@josh-hughes.com">josh@josh-hughes.com</a>.</p>
+    <p>This project is produced by <a href="https://josh-hughes.com">Josh Hughes</a>. It is not affiliated with the <a href="https://www.omnigroup.com">Omni Group</a>. Please feel free to use the icons as you see fit. If you have any questions or requests, please send them to <a href="mailto:josh@josh-hughes.com">josh@josh-hughes.com</a>.</p>
 </footer>
 
 <!-- Javascript -->
 <script>var mac_resolution_changed = <?php print $mac_resolution_changed;?>;</script>
 <script src="../js/v2.js"></script>
-<?php
-if ((isset($_SERVER['HTTP_HOST'])) && ($_SERVER['HTTP_HOST'] == 'omnifocusicons.josh-hughes.com')) {
-    print '<script src="../js/google-analytics.js"></script>';
-}
-?>
 </body>
 </html>

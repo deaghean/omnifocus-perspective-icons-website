@@ -4,6 +4,10 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javasc
 # Disable IE Compatibility Mode
 Header set X-UA-Compatible "IE=edge,chrome=1"
 
-# Redirect test v3 page
-RewriteEngine on
+# Enforce HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+
+# Redirect Test v3 Page
 RewriteRule ^v3[/]*(.*)$    / [R=301,L]
