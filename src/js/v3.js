@@ -21,7 +21,8 @@ function switchIcons(color)
     var colorClass          = color,
         colorsAvailable     = ['sherbet', 'pink', 'magenta', 'orange', 'light-pink', 'red', 'green', 'lime-green', 'gold', 'teal', 'light-teal', 'dark-teal', 'purple', 'light-purple', 'indigo', 'lilac', 'fuchsia', 'plum', 'blue', 'light-blue', 'navy', 'graphite', 'grey', 'light-grey'],
         glyphImages         = document.querySelectorAll('.glyphs img'),
-        iconClass           = '';
+        iconClass           = '',
+        iconType            = '';
     
     if (colorsAvailable.indexOf(color) >= 0) {
 
@@ -33,9 +34,10 @@ function switchIcons(color)
         // Update glyphs
         for (i = 0; i < glyphImages.length; i++) {
             iconClass = glyphImages[i].className;
-            
+            iconType  = glyphImages[i].getAttribute('data-type') || 'filled';
+
             if ((typeof iconClass !== 'undefined') && (iconClass !== '')) {
-                glyphImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-ios-' + colorClass + '@2x.png');
+                glyphImages[i].setAttribute('src', 'icons/' + iconClass + '/icon-' + iconType + '-' + colorClass + '@2x.png');
             }
         }
     }

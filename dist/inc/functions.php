@@ -31,12 +31,13 @@ function colorSelector($color, $all_colors)
  *
  * @param string $icon_color Icon color that should be used
  * @param array $icon_list List of icons (see configuration.php)
+ * @param string $icon_type Type of icon ("filled" or "rounded")
  * @return string Glyph HTML
  */
-function glyphs($icon_color, $icon_list)
+function glyphs($icon_color, $icon_list, $icon_type)
 {
     foreach ($icon_list as $icon_name => $icon_label) {
-        $glyphs .= sprintf('<li><figure><img src="icons/%s/icon-ios-%s@2x.png?v=2" alt="" class="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $icon_color, $icon_name, $icon_label);
+        $glyphs .= sprintf('<li><figure><img src="icons/%s/icon-%s-%s@2x.png?v=3" alt="" class="%s" data-type="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $icon_type, $icon_color, $icon_name, $icon_type, $icon_label);
     }
     print $glyphs;
 }

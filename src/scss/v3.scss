@@ -358,7 +358,7 @@ main
         {
             display: grid;
             grid-template-columns: 27rem minmax(17rem, 52rem);
-            grid-template-rows: min-content min-content min-content;
+            grid-template-rows: min-content min-content min-content min-content;
             justify-content: center;
         }
     }
@@ -1019,7 +1019,7 @@ main
     h1,
     h2 
     {
-        color: $color-purple-400;
+        color: $color-grey-500;
         font-size: 1.5rem;
         margin: 0;
         
@@ -1117,7 +1117,7 @@ main
         padding-top: 2rem;
     }
 
-    #round-rect
+    #filled
     {
         @supports (display: $grid-variable)
         {
@@ -1129,7 +1129,7 @@ main
         }
     }
 
-    #installation
+    #rounded
     {
         @supports (display: $grid-variable)
         {
@@ -1137,6 +1137,18 @@ main
             {
                 grid-column: 2 / 3;
                 grid-row: 2 / 3;
+            }
+        }
+    }
+
+    #installation
+    {
+        @supports (display: $grid-variable)
+        {
+            @media #{$query-944} 
+            {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
             }
         }
 

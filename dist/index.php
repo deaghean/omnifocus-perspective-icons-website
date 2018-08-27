@@ -32,11 +32,11 @@ require_once('inc/functions.php');
     <meta name="twitter:creator" content="@deaghean" />
     <meta property="og:url" content="https://omnifocusicons.josh-hughes.com/" />
     <meta property="og:title" content="Perspective Icons for OmniFocus 3, by Josh Hughes" />
-    <meta property="og:description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3 for iOS, with this FREE set of custom perspective icons." />
+    <meta property="og:description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3, with this FREE set of custom perspective icons." />
     <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
-    <link href="css/v3.css?v=3" rel="stylesheet" />
+    <link href="css/v3.css?v=4" rel="stylesheet" />
 
     <!-- Mark JavaScript Support -->
     <script>
@@ -48,7 +48,7 @@ require_once('inc/functions.php');
     <div class="introduction">
         <h1>Perspective Icons for&nbsp;OmniFocus&nbsp;3</h1>
 
-        <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3 for&nbsp;iOS</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
+        <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
 
         <p><a href="https://github.com/deaghean/omnifocus-perspective-icons/archive/master.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
     </div>
@@ -72,13 +72,23 @@ require_once('inc/functions.php');
         </form>
     </div>
 
-    <section id="round-rect">
+    <section id="filled">
+        <h2>Filled Style</h2>
+        <p>These fit in well with the built-in custom perspective icons, and will work well on the soon-to-be-released OmniFocus 3 for&nbsp;Mac.</p>
         <ul class="glyphs">
-            <?php glyphs($color, $icon_list); ?>
+            <?php glyphs($color, $icon_list, 'filled'); ?>
+        </ul>
+    </section>
+
+    <section id="rounded">
+        <h2>Rounded Rectangle Style</h2>
+        <p>These match up stylistically with the built-in perspectives on&nbsp;iOS.</p>
+        <ul class="glyphs">
+            <?php glyphs($color, $icon_list, 'rounded'); ?>
         </ul>
 
         <div class="note">
-            <p>Please note that more icon and style options will be added soon, and <a href="v2/">my previous set for OmniFocus 2 for Mac and iOS remains available here</a>.</p>
+            <p>Please note, <a href="v2/">my previous set for OmniFocus 2 for Mac and iOS remains available here</a>.</p>
         </div>
     </section>
     
@@ -114,6 +124,6 @@ require_once('inc/functions.php');
 </footer>
 
 <!-- Javascript -->
-<script src="js/v3.js?v=3"></script>
+<script src="js/v3.js?v=4"></script>
 </body>
 </html>
