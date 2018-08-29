@@ -73,7 +73,7 @@ require_once('inc/functions.php');
     </div>
 
     <section id="filled">
-        <h2>Filled Style</h2>
+        <h2>Filled Style <small class="new">New</small></h2>
         <p>These fit in well with the built-in custom perspective icons, and will work well on the soon-to-be-released OmniFocus 3 for&nbsp;Mac.</p>
         <ul class="glyphs">
             <?php glyphs($color, $icon_list, 'filled'); ?>

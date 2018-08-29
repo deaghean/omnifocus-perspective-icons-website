@@ -1034,6 +1034,16 @@ main
         }
     }
 
+    .new {
+        background: $color-icon-v3-gold;
+        border-radius: 0.25rem;
+        color: $color-grey-500;
+        font-size: 0.5em;
+        padding: 0.25em 0.5em;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
     .icon-description
     {
         margin-bottom: 2rem;
