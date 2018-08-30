@@ -36,7 +36,7 @@ require_once('inc/functions.php');
     <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
-    <link href="css/v3.css?v=4" rel="stylesheet" />
+    <link href="css/v3.css?v=5" rel="stylesheet" />
 
     <!-- Mark JavaScript Support -->
     <script>
@@ -88,6 +88,7 @@ require_once('inc/functions.php');
         </ul>
 
         <div class="note">
+            <h2>Icons for OmniFocus&nbsp;2</h2>
             <p>Please note, <a href="v2/">my previous set for OmniFocus 2 for Mac and iOS remains available here</a>.</p>
         </div>
     </section>

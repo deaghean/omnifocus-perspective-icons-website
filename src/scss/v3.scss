@@ -365,7 +365,7 @@ main
 
     section
     {
-        margin: 0 auto 2rem auto;
+        margin: 0 auto 0 auto;
         max-width: 34rem;
         padding: 1rem 1.5rem 0 1.5rem;
         position: relative;
@@ -382,7 +382,7 @@ main
             @media #{$query-944}
             {   
                 margin: 0;
-                padding: 2rem;
+                padding: 2rem 2rem 0 2rem;
             }
         }
     }
@@ -1034,6 +1034,11 @@ main
         }
     }
 
+    p
+    {
+        margin-bottom: 1.5rem;
+    }
+
     .new {
         background: $color-icon-v3-gold;
         border-radius: 0.25rem;
@@ -1124,7 +1129,15 @@ main
 
     .note
     {
-        padding-top: 2rem;
+        background: $color-grey-100;
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+        padding: 1.5rem;
+
+        .dark-palette &
+        {
+            background: #000;
+        }
     }
 
     #filled
