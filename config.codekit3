@@ -44,11 +44,11 @@
 		"oAP": "\/assets\/videos\/ScreenRecording_06-17-2018 21-10-03.MP4",
 		"oF": 0
 		},
-	"\/dist\/.htaccess": {
+	"\/dist\/.htaccess2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/dist\/.htaccess",
+		"oAP": "\/dist\/.htaccess2",
 		"oF": 0
 		},
 	"\/dist\/css\/v2.css": {
@@ -65114,8 +65114,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/icon-v3-background-dark-palette.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
