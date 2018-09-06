@@ -42,6 +42,7 @@ $icon_list = array(
     'clipboard'                 => 'Clipboard',
     'clock'                     => 'Clock',
     'coffee'                    => 'Coffee',
+    'compass'                   => 'Compass',
     'cup'                       => 'Cup',
     'desk'                      => 'Desk',
     'document'                  => 'Doc',
