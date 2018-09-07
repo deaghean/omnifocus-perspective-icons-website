@@ -202,26 +202,26 @@ header
 
             @media #{$query-704}
             {
-                background: url('../images/icon-v3-background.png') no-repeat top right;
+                background: url('../images/icon-v3-background.png?v=2') no-repeat top right;
                 background-size: 412px 165px;
                 padding-top: 180px;
             }
 
             @media #{$query-704-2x}
             {
-                background-image: url('../images/icon-v3-background@2x.png');
+                background-image: url('../images/icon-v3-background@2x.png?v=2');
             }
 
             .dark-palette &
             {
                 @media #{$query-704}
                 {
-                    background-image: url('../images/icon-v3-background-dark-palette.png');
+                    background-image: url('../images/icon-v3-background-dark-palette.png?v=2');
                 }
 
                 @media #{$query-704-2x}
                 {
-                    background-image: url('../images/icon-v3-background-dark-palette@2x.png');
+                    background-image: url('../images/icon-v3-background-dark-palette@2x.png?v=2');
                 }
             }
         }

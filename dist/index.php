@@ -36,7 +36,7 @@ require_once('inc/functions.php');
     <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
-    <link href="css/v3.css?v=6" rel="stylesheet" />
+    <link href="css/v3.css?v=7" rel="stylesheet" />
 
     <!-- Mark JavaScript Support -->
     <script>
