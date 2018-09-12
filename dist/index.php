@@ -36,7 +36,7 @@ require_once('inc/functions.php');
     <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
     
     <!-- CSS -->
-    <link href="css/v3.css?v=7" rel="stylesheet" />
+    <link href="css/v3.css?v=8" rel="stylesheet" />
 
     <!-- Mark JavaScript Support -->
     <script>
@@ -88,17 +88,39 @@ require_once('inc/functions.php');
         </ul>
 
         <div class="note">
-            <h2>Icons for OmniFocus&nbsp;2</h2>
+            <h2>OmniFocus 2 Icon&nbsp;Set</h2>
             <p>Please note, <a href="v2/">my previous set for OmniFocus 2 for Mac and iOS remains available here</a>.</p>
         </div>
     </section>
     
     <section id="installation">
+        <h2>Mac Installation</h2>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dVwfSIzE9oM?rel=0" frameborder="0" allow="autoplay; encrypted-media" title="Video tutorial for how to install perspective icons on OmniFocus 3 for Mac" allowfullscreen></iframe>
+        </div>
+        
+        <p>Note that the above video was taken with a beta version of OmniFocus 3. It should be representative of the process,&nbsp;however.</p>
+
+        <div class="instructions">
+            <ol>
+                <li>If you haven&rsquo;t already, purchase the Pro upgrade. Pro is required to use custom perspectives.</li>
+
+                <li>In the Menu, go to <strong>Perspectives &gt; Show Perspectives</strong></li>
+            
+                <li>Click on the Perspective you want to edit, or add a new one. (Note that you cannot change the icons for Inbox, Projects, Tags, Forecast, Flagged, or&#160;Review).</li>
+            
+                <li>Drag the icon you want to use from this site to the icon&#160;picker.</li>
+
+                <li>If you would also like the text color to match the icon, click the arrow in the bottom right of the icon picker and make your&nbsp;choice.</li>
+            </ol>
+        </div>
+
+        <h2>iOS Installation</h2>
+        
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/U23cVd1wyaA?rel=0" frameborder="0" allow="autoplay; encrypted-media" title="Video tutorial for how to install perspective icons on OmniFocus 3 for iOS" allowfullscreen></iframe>
         </div>
-
-        <h2>Installation</h2>
 
         <div class="instructions">
             <p><a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3 for iOS</a> for the first time allows custom perspective icons to be chosen from a user&rsquo;s photo library. Follow these steps:</p>

@@ -51,6 +51,13 @@
 		"oAP": "\/dist\/.htaccess",
 		"oF": 0
 		},
+	"\/dist\/.htaccess2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/.htaccess2",
+		"oF": 0
+		},
 	"\/dist\/css\/v2.css": {
 		"aP": 1,
 		"bl": 0,
