@@ -33,7 +33,7 @@ require_once('inc/functions.php');
     <meta property="og:url" content="https://omnifocusicons.josh-hughes.com/" />
     <meta property="og:title" content="Perspective Icons for OmniFocus, by Josh Hughes" />
     <meta property="og:description" content="Enhance your experience with the Omni Group&#8217;s fantastic personal task management software, OmniFocus, with this FREE set of custom perspective icons." />
-    <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3.png" />
+    <meta property="og:image" content="https://omnifocusicons.josh-hughes.com/images/twitter-image-v3-filled.png" />
     
     <!-- CSS -->
     <link href="../css/v2.css" rel="stylesheet" />
