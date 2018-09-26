@@ -14,7 +14,7 @@ require_once('inc/functions.php');
 <head>
     <meta charset="utf-8" />
     <title>Perspective Icons for OmniFocus 3, by Josh Hughes</title>
-    <meta name="description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3 for iOS, with this FREE set of custom perspective icons." />
+    <meta name="description" content="Enhance your experience with the Omni Group&rsquo;s powerful task management app, OmniFocus 3, with this FREE set of custom perspective icons." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Favicon -->
@@ -48,7 +48,7 @@ require_once('inc/functions.php');
     <div class="introduction">
         <h1>Perspective Icons for&nbsp;OmniFocus&nbsp;3</h1>
 
-        <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
+        <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/">OmniFocus 3</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
 
         <p><a href="https://github.com/deaghean/omnifocus-perspective-icons/archive/master.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
     </div>
@@ -74,7 +74,7 @@ require_once('inc/functions.php');
 
     <section id="filled">
         <h2>Filled Style <small class="new">New</small></h2>
-        <p>These fit in well with the built-in custom perspective icons, and will work well on the soon-to-be-released OmniFocus 3 for&nbsp;Mac.</p>
+        <p>This style works best for Mac, and also matches well with the built-in icon options on both Mac and&nbsp;iOS.</p>
         <ul class="glyphs">
             <?php glyphs($color, $icon_list, 'filled'); ?>
         </ul>
@@ -82,7 +82,7 @@ require_once('inc/functions.php');
 
     <section id="rounded">
         <h2>Rounded Rectangle Style</h2>
-        <p>These match up stylistically with the built-in perspectives on&nbsp;iOS.</p>
+        <p>This style matches up stylistically with the built-in perspectives on&nbsp;iOS.</p>
         <ul class="glyphs">
             <?php glyphs($color, $icon_list, 'rounded'); ?>
         </ul>
@@ -99,8 +99,6 @@ require_once('inc/functions.php');
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dVwfSIzE9oM?rel=0" frameborder="0" allow="autoplay; encrypted-media" title="Video tutorial for how to install perspective icons on OmniFocus 3 for Mac" allowfullscreen></iframe>
         </div>
-        
-        <p>Note that the above video was taken with a beta version of OmniFocus 3. It should be representative of the process,&nbsp;however.</p>
 
         <div class="instructions">
             <ol>
