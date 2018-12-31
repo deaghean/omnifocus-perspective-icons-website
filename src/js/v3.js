@@ -76,6 +76,38 @@ function switchColors(event)
     removeColorSelectorModal();
 }
 
+/**
+ * Switch color palettes
+ *
+ * @param type string 'light' or 'dark'
+ */
+function switchColorPalette(type)
+{
+    if (type === 'dark') {
+        htmlElement.classList.add('dark-palette');
+        paletteButton.value = 'light';
+        paletteButton.innerHTML = '<span>Preview </span>Light Palette';
+    } else {
+        htmlElement.classList.remove('dark-palette');
+        paletteButton.value = 'dark';
+        paletteButton.innerHTML = '<span>Preview </span>Dark Palette';
+    }
+}
+
+/**
+ * Setup automatic dark mode handling
+ *
+ * @param object event Event
+ */
+function triggerDarkMode (event)
+{
+    if (event.matches) {
+        switchColorPalette('dark');
+    } else {
+        switchColorPalette('light');
+    }
+}
+
 // Add events to the color selectors
 for (var i = 0; i < colorSelectorButtons.length; i++) {
     colorSelectorButtons[i].addEventListener('change', switchColors);
@@ -100,14 +132,10 @@ htmlElement.addEventListener('touchend', removeColorSelectorModal);
 // Setup palette button
 paletteButton.addEventListener('click', function(event) {
     event.preventDefault();
-
-    if (this.value === 'dark') {
-        htmlElement.classList.add('dark-palette');
-        this.value = 'light';
-        this.innerHTML = '<span>Preview </span>Light Palette';
-    } else {
-        htmlElement.classList.remove('dark-palette');
-        this.value = 'dark';
-        this.innerHTML = '<span>Preview </span>Dark Palette';
-    }
+    switchColorPalette(this.value);
 });
+
+// Trigger dark mode automatically
+var darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+triggerDarkMode(darkModeMediaQuery);
+darkModeMediaQuery.addListener(triggerDarkMode);
