@@ -73,7 +73,7 @@ require_once('inc/functions.php');
     </div>
 
     <section id="filled">
-        <h2>Filled Style <small class="new">New</small></h2>
+        <h2>Filled Style</h2>
         <p>This style works best for Mac, and also matches well with the built-in icon options on both Mac and&nbsp;iOS.</p>
         <ul class="glyphs">
             <?php glyphs($color, $icon_list, 'filled'); ?>
