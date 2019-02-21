@@ -105,6 +105,7 @@ $icon_list = array(
     'projects-sal'              => 'Projects (Singles)',
     'projects-parallel'         => 'Projects (Parallel)',
     'projects-sequential'       => 'Projects (Sequential)',
+    'prohibited'                => 'Prohibited',
     'radar'                     => 'Radar',
     'rain'                      => 'Rain',
     'repeating'                 => 'Repeating',
