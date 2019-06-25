@@ -25,6 +25,7 @@ $icon_list = array(
     'battery-medium'            => 'Battery (Medium)',
     'battery-low'               => 'Battery (Low)',
     'beaker'                    => 'Beaker',
+    'bicycle'                   => 'Bicycle',
     'book'                      => 'Book',
     'briefcase'                 => 'Briefcase',
     'broom'                     => 'Broom',
