@@ -108,7 +108,7 @@ html
 
     &.dark-palette 
     {
-        background: $color-grey-500;
+        background: #000;
         color: $color-grey-100;
     }
 }
@@ -323,23 +323,23 @@ header
 
         .screenshot
         {
-            background: url('../images/of3-ipad-screenshot.png') no-repeat;
+            background: url('../images/of3-ipad-screenshot-light-mode.png') no-repeat;
             background-size: 768px 550px;
             height: 100%;
             width: 100%;
             
             @media #{$query-2x}
             {
-                background-image: url('../images/of3-ipad-screenshot@2x.png');
+                background-image: url('../images/of3-ipad-screenshot-light-mode@2x.png');
             }
 
             .dark-palette &
             {
-                background-image: url('../images/of3-ipad-screenshot-dark-palette.png');
+                background-image: url('../images/of3-ipad-screenshot-dark-mode.png');
 
                 @media #{$query-2x}
                 {
-                    background-image: url('../images/of3-ipad-screenshot-dark-palette@2x.png');
+                    background-image: url('../images/of3-ipad-screenshot-dark-mode@2x.png');
                 }
             }
         }
@@ -424,7 +424,7 @@ main
                 {
                     background: none;
                     grid-column: 1 / 2;
-                    grid-row: 1 / 2;
+                    grid-row: 1 / 3;
                     position: relative;
                 }
             }

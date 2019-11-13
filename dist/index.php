@@ -68,7 +68,7 @@ require_once('inc/functions.php');
             </ul>
 
             <button name="palette" id="color-button" value="<?php print $apply_color_button_value;?>"><span>Select </span>Colors</button>
-            <button name="palette" id="palette-button" value="<?php print $palette_button_value;?>"><span>Preview </span><?php print ucwords($palette_button_value);?> Palette</button>
+            <button name="palette" id="palette-button" value="<?php print $palette_button_value;?>"><span>Preview </span><?php print ucwords($palette_button_value);?> Mode</button>
         </form>
     </div>
 
