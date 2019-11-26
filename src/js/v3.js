@@ -86,11 +86,11 @@ function switchColorPalette(type)
     if (type === 'dark') {
         htmlElement.classList.add('dark-palette');
         paletteButton.value = 'light';
-        paletteButton.innerHTML = '<span>Preview </span>Light Palette';
+        paletteButton.innerHTML = '<span>Preview </span>Light Mode';
     } else {
         htmlElement.classList.remove('dark-palette');
         paletteButton.value = 'dark';
-        paletteButton.innerHTML = '<span>Preview </span>Dark Palette';
+        paletteButton.innerHTML = '<span>Preview </span>Dark Mode';
     }
 }
 
