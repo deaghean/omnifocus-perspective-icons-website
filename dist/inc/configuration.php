@@ -113,6 +113,7 @@ $icon_list = array(
     'rain'                      => 'Rain',
     'repeating'                 => 'Repeating',
     'rocket-ship'               => 'Rocket Ship',
+    'satellite-dish'            => 'Satellite Dish <span class="new">New</span>',
     'search'                    => 'Search',
     'shopping-bag'              => 'Shopping',
     'shopping-cart'             => 'Shopping',
