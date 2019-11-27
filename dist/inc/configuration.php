@@ -84,6 +84,7 @@ $icon_list = array(
     'lock'                      => 'Lock',
     'mac-classic'               => 'Mac Classic',
     'map'                       => 'Map',
+    'menorah'                   => 'Menorah <span class="new">New</span>',
     'meteor'                    => 'Meteor',
     'microphone'                => 'Microphone',
     'money'                     => 'Money',
