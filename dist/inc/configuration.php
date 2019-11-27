@@ -41,6 +41,7 @@ $icon_list = array(
     'chart-pie'                 => 'Chart (Pie)',
     'chat'                      => 'Chat',
     'checkmark'                 => 'Checkmark',
+    'christmas-tree'            => 'Christmas Tree <span class="new">New</span>',
     'clipboard'                 => 'Clipboard',
     'clock'                     => 'Clock',
     'coffee'                    => 'Coffee',
