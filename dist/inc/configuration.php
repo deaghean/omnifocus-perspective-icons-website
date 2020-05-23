@@ -131,6 +131,7 @@ $icon_list = array(
     'tag-plus'                  => 'Tag (+)',
     'tag-star'                  => 'Tag (Star)',
     'target'                    => 'Target',
+    'terminal'                  => 'Terminal <span class="new">New</span>',
     'trophy'                    => 'Trophy',
     'umbrella'                  => 'Umbrella',
     'video-game'                => 'Video Game',
