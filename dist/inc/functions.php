@@ -38,7 +38,7 @@ function glyphs($icon_color, $icon_list, $icon_type)
 {
     $glyphs = '';
     foreach ($icon_list as $icon_name => $icon_label) {
-        $glyphs .= sprintf('<li><figure><img src="icons/%s/icon-%s-%s@2x.png?v=7" alt="" class="%s" data-type="%s" /><figcaption>%s</figcaption></figure></li>', $icon_name, $icon_type, $icon_color, $icon_name, $icon_type, $icon_label);
+        $glyphs .= sprintf('<li><figure><img src="icons/%s/icon-%s-%s@2x.png?v=8" alt="" class="%s" data-type="%s" loading="lazy" /><figcaption>%s</figcaption></figure></li>', $icon_name, $icon_type, $icon_color, $icon_name, $icon_type, $icon_label);
     }
     print $glyphs;
 }

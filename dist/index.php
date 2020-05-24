@@ -50,7 +50,7 @@ require_once('inc/functions.php');
 
         <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/">OmniFocus 3</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
 
-        <p><a href="icons.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
+        <p><a href="icons.zip?v=2" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
     </div>
 
     <div class="screenshot-wrapper">
@@ -74,15 +74,15 @@ require_once('inc/functions.php');
 
     <section id="filled">
         <h2>Filled Style</h2>
-        <p>This style works best for Mac, and also matches well with the built-in icon options on both Mac and&nbsp;iOS.</p>
+        <p>These match the style of the built-in custom icon options on both Mac and&nbsp;iOS.</p>
         <ul class="glyphs">
             <?php glyphs($color, $icon_list, 'filled'); ?>
         </ul>
     </section>
 
     <section id="rounded">
-        <h2>Rounded Rectangle Style</h2>
-        <p>This style matches up stylistically with the built-in perspectives on&nbsp;iOS.</p>
+        <h2>Rounded Style</h2>
+        <p>These match the style of the stock perspectives on&nbsp;iOS.</p>
         <ul class="glyphs">
             <?php glyphs($color, $icon_list, 'rounded'); ?>
         </ul>
