@@ -50,7 +50,7 @@ require_once('inc/functions.php');
 
         <p>Enhance your experience with the Omni Group&rsquo;s powerful task management app, <a href="https://www.omnigroup.com/omnifocus/">OmniFocus 3</a>, with this <strong>FREE</strong> set of custom perspective&nbsp;icons.</p>
 
-        <p><a href="icons.zip?v=2" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
+        <p><a href="icons.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
     </div>
 
     <div class="screenshot-wrapper">
@@ -102,14 +102,10 @@ require_once('inc/functions.php');
 
         <div class="instructions">
             <ol>
-                <li>If you haven&rsquo;t already, purchase the Pro upgrade. Pro is required to use custom perspectives.</li>
-
+                <li>If you haven&rsquo;t already, purchase the <a href="https://support.omnigroup.com/buying-of3-mac/">Pro upgrade</a>. Pro is required to use custom perspectives.</li>
                 <li>In the Menu, go to <strong>Perspectives &gt; Show Perspectives</strong></li>
-            
                 <li>Click on the Perspective you want to edit, or add a new one. (Note that you cannot change the icons for Inbox, Projects, Tags, Forecast, Flagged, or&#160;Review).</li>
-            
                 <li>Drag the icon you want to use from this site to the icon&#160;picker.</li>
-
                 <li>If you would also like the text color to match the icon, click the arrow in the bottom right of the icon picker and make your&nbsp;choice.</li>
             </ol>
         </div>
@@ -121,19 +117,23 @@ require_once('inc/functions.php');
         </div>
 
         <div class="instructions">
-            <p><a href="https://www.omnigroup.com/omnifocus/ios/">OmniFocus 3 for iOS</a> for the first time allows custom perspective icons to be chosen from a user&rsquo;s photo library. Follow these steps:</p>
+            <p>If you haven&rsquo;t already, purchase the <a href="https://support.omnigroup.com/of3-ios-iap/">Pro upgrade</a>. Pro is required to use custom perspectives.</p>
 
+            <h3>Method 1</h3>
             <ol>
-                <li>If you haven&rsquo;t already, purchase the <a href="https://support.omnigroup.com/of3-ios-iap/">Pro upgrade</a>. Pro is required to use custom perspectives.</li>
-            
-                <li>On this site, choose the colors and icons you would like to use. To save an icon to your photo library, tap and hold the icon, and then choose <strong>Save&nbsp;Image</strong>.</li>
-
+                <li><a href="icons.zip">Download the full icon set</a> to a location you can access with the Files app. iCloud Drive is a good choice.</li>
                 <li>Click on the Perspective you want to edit, or add a new one. (Note that you cannot change the icons for Inbox, Projects, Tags, Forecast, Flagged, Nearby, or&nbsp;Review).</li>
+                <li>In the perspective editor, tap the icon next to the perspective name, scroll down and hit <strong>Custom</strong>.</li>
+                <li>Navigate to the icon you want to use and select it.</li>
+                <li>If you would also like the text color to match the icon, tap <strong>Color</strong> in the top right of the view, and make your&nbsp;choice.</li>
+            </ol>
 
-                <li>In the perspective editor, tap the icon next to the perspective name, scroll down and hit <strong>Custom</strong>. Choose an icon from your photo&nbsp;library.</li>
-
-                <li>Alternatively, on the iPad in Split View, icons from this site can be dragged to anywhere on the perspective&nbsp;editor.</li>
-
+            <h3>Method 2</h3>
+            <ol>
+                <li>On this site, choose the colors and icons you would like to use. To copy an icon to your clipboard, tap and hold the icon, and then choose <strong>Copy</strong>.</li>
+                <li>Click on the Perspective you want to edit, or add a new one. (Note that you cannot change the icons for Inbox, Projects, Tags, Forecast, Flagged, Nearby, or&nbsp;Review).</li>
+                <li>In the perspective editor, tap the icon next to the perspective name, scroll down and hit <strong>Use Image from Clipboard</strong>.</li>
+                <li>Alternatively, if you're on an iPad in Split View, icons from this site can be dragged to anywhere on the perspective&nbsp;editor.</li>
                 <li>If you would also like the text color to match the icon, tap <strong>Color</strong> in the top right of the view, and make your&nbsp;choice.</li>
             </ol>
         </div>

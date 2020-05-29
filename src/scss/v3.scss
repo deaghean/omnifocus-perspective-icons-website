@@ -1033,6 +1033,18 @@ main
             font-size: 2rem;
         }
     }
+    
+    h2
+    {
+        border-bottom: 2px solid $color-grey-100;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        
+        .dark-palette &
+        {
+            border-color: $color-grey-400;
+        }
+    }
 
     p
     {
