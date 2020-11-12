@@ -45,7 +45,7 @@ require_once('inc/functions.php');
 
         <p>Enhance your experience with the Omni Group&#8217;s fantastic personal task management software, <a href="https://www.omnigroup.com/omnifocus/">OmniFocus</a>, with this <strong>FREE</strong> set of custom perspective&#160;icons.</p>
 
-        <p><a href="https://github.com/deaghean/omnifocus-perspective-icons/archive/master.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on Github</a></span></p>
+        <p><a href="https://github.com/deaghean/omnifocus-perspective-icons/archive/master.zip" class="button">Download</a> <span class="github">or <a href="https://github.com/deaghean/omnifocus-perspective-icons">View on GitHub</a></span></p>
     </div>
 
     <div class="screenshot"></div>
